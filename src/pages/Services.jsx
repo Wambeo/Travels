@@ -104,7 +104,7 @@ export default function Services() {
       </div>
 
       {/* Cards Section */}
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center  items-center w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
           
           {/* Card1*/}

@@ -110,7 +110,7 @@ export default function Landing() {
         <h2 className="text-4xl text-gray-800 mb-6">POPULAR DESTINATIONS</h2>
 
          {/*Cards*/ }
-         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
+         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 px-4 sm:px-8 lg:px-20">
   {/* Small Card 1 */}
   <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
     <a href="#">
@@ -210,12 +210,13 @@ export default function Landing() {
   <div className="bg-orange-200 w-full px-4 py-8">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {/* Image 1 */}
-      <div className="bg-white border border-gray-200 rounded-lg shadow h-[600px] w-full">
+      <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
             src="../../public/migrations.jpg"
             alt="Noteworthy technology acquisitions 2021"
+          
           />
         </a>
         <div className="p-3">
@@ -228,7 +229,7 @@ export default function Landing() {
       </div>
 
       {/* Image 2 */}
-      <div className="bg-white border border-gray-200 rounded-lg shadow h-[600px] w-full">
+      <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
@@ -246,7 +247,7 @@ export default function Landing() {
       </div>
 
       {/* Image 3 */}
-      <div className="bg-white border border-gray-200 rounded-lg shadow h-[600px] w-full">
+      <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
