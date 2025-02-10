@@ -1,20 +1,55 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import animal2 from "../assets/animal2.jpg"
+import antelope1 from "../assets/antelope1.jpg"
+import baboon1 from "../assets/baboon1.jpg"
+import big5 from "../assets/big5.png"
+import bird2 from "../assets/bird2.jpg"
+import birdie from "../assets/birdie.jpg"
+import boatracing from "../assets/boatracing.jpg"
+import cheetah from "../assets/cheetah.jpg"
+import cheetah2 from "../assets/cheetah2.jpg"
+import chimpanzee from "../assets/chimpanzee.jpg"
+import diani from "../assets/diani.jpg"
+import elephant1 from "../assets/elephant1.jpg"
+import elephants2 from "../assets/elephants2.jpg"
+import flamingoes from "../assets/flamingoes.jpg"
+import ghazal from "../assets/ghazal.jpg"
+import leopard from "../assets/leopard.jpg"
+import luxury from "../assets/luxury.jpg"
+import maasai from "../assets/maasai.jpg"
+import eco from "../assets/eco.png"
+import park1 from "../assets/park1.jpg"
+import twolions from "../assets/twolions.jpg"
+import cars from "../assets/cars.jpg"
+import massage from "../assets/massage.jpg"
+import tanzania1 from "../assets/tanzania1.jpg"
+
 
 export default function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "../../public/lady.jpg",
-    "../../public/outdoor1.jpg",
-    "../../public/elephant1.jpg",
-    "../../public/ghazal2.jpg",
-    "../../public/waterfall.jpg",
-    "../../public/hicker.jpg",
-    "../../public/elephants2.jpg",
-    "../../public/zebras2.jpg",
-    "../../public/tourists.jpg",
-  ];
+    
+    animal2,
+    antelope1,
+    baboon1,
+    big5,
+    bird2,
+    boatracing,
+    cheetah,
+    cheetah2,
+    chimpanzee,
+    diani,
+    elephant1,
+    elephants2,
+    flamingoes,
+    ghazal,
+    leopard,
+    birdie,
+    twolions
+  
+];
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -112,8 +147,8 @@ export default function Services() {
             <Link to="/services/service1">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/cars.jpg"
-                alt="Zebra"
+                src={cars}
+                alt="cars"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -123,6 +158,12 @@ export default function Services() {
                 Explore Africa at your own pace. Whether you need a rugged 4x4 for safari adventures, a comfortable sedan for city tours, or a spacious van for group travel we’ve got you covered.
                   Explore 
                 </p>
+                <a href="#" class="inline-flex items-center px-3 py-2 mt-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
               </div>
             </Link>
           </div>
@@ -132,8 +173,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/park1.jpg"
-                alt="Zebra"
+                src={park1}
+                alt="park1"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -152,8 +193,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/tanzania1.jpg"
-                alt="Zebra"
+                src={tanzania1}
+                alt="Tanzania"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -173,8 +214,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/maasai.jpg"
-                alt="Zebra"
+                src={maasai}
+                alt="maasai"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -193,8 +234,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/eco.png"
-                alt="Zebra"
+                src={eco}
+                alt="eco"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -214,8 +255,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/boatracing.jpg"
-                alt="Zebra"
+                src={boatracing}
+                alt="boatracing"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
@@ -234,8 +275,8 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/birdie.jpg"
-                alt="Zebra"
+                src={bird2}
+                alt="bird"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
@@ -254,7 +295,7 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/massage.jpg"
+                src={massage}
                 alt="Zebra"
               />
               <div className="p-4">
@@ -274,7 +315,7 @@ export default function Services() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/luxury.jpg"
+                src={luxury}
                 alt="Zebra"
               />
               <div className="p-4">

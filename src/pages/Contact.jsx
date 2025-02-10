@@ -1,4 +1,59 @@
+import { useState, useRef } from "react"
+import emailjs from '@emailjs/browser';
+
+
+
 export default function Contact() {
+  const formRef = useRef()
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  })
+  const [loading, setLoading] = useState(false)
+  const handleChange = (e) =>{
+    const { name, value } = e.target
+    // console.log(name, value)
+    setForm({...form, [name]: value })
+  }
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(
+       "service_5opar3i",
+       "template_erzg2r2",
+       {
+        from_name: form.name,
+        to_name: "Africkson",
+        from_email: form.email,
+        to_email: 'africksonsafaris@gmail.com',
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+       },
+       "dIvCHe-RXOwaM1cCy"
+      )
+      .then(()=>{
+        setLoading(false)
+        alert("Message sent successfully!")
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        })
+      },
+     (error) => {
+        alert("Error sending email: ", error);
+        setLoading(false)
+      });
+    
+  }
+
     return (
       <div className="bg-orange-200"> 
         
@@ -60,7 +115,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-                  <p className="text-sm">africksonsafaris@outlook.com</p>
+                  <p className="text-sm">africksonsafaris@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -72,7 +127,7 @@ export default function Contact() {
         <div className="bg-orange-200 min-h-screen flex items-center justify-center">
   <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
     <h2 className="text-2xl font-bold text-gray-700 mb-6 text-center">Contact Us</h2>
-    <form className="space-y-7">
+    <form ref={formRef} className="space-y-7">
      
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -80,7 +135,9 @@ export default function Contact() {
         </label>
         <input
           type="text"
-          id="name"
+          name="name"
+          value={form.name}
+          onChange={handleChange}
           placeholder="Name"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-400 focus:ring focus:ring-orange-300"
           required
@@ -94,7 +151,9 @@ export default function Contact() {
         </label>
         <input
           type="email"
-          id="email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
           placeholder="Email"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-400 focus:ring focus:ring-orange-300"
           required
@@ -108,8 +167,10 @@ export default function Contact() {
         </label>
         <input
           type="tel"
-          id="phone"
+          name="phone"
           placeholder="Phone"
+          value={form.phone}
+          onChange={handleChange}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-400 focus:ring focus:ring-orange-300"
           required
         />
@@ -122,8 +183,10 @@ export default function Contact() {
         </label>
         <input
           type="text"
-          id="subject"
+          name="subject"
           placeholder="Subject"
+          value={form.subject}
+          onChange={handleChange}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-400 focus:ring focus:ring-orange-300"
           required
         />
@@ -135,7 +198,9 @@ export default function Contact() {
           Message <span className="text-red-500">*</span>
         </label>
         <textarea
-          id="message"
+          name="message"
+          value={form.message}
+          onChange={handleChange}
           placeholder="Message"
           rows="4"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-400 focus:ring focus:ring-orange-300"
@@ -147,9 +212,10 @@ export default function Contact() {
       <div>
         <button
           type="submit"
+          onClick={handleSubmit}
           className="w-full bg-orange-500 text-white font-medium py-2 rounded-lg shadow-md hover:bg-orange-600 transition-colors"
         >
-          SEND
+          {loading ? "Sending..." : "Send"}
         </button>
       </div>
     </form>

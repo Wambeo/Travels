@@ -1,17 +1,49 @@
 import { useState } from "react";
+import animal2 from "../assets/animal2.jpg"
+import antelope1 from "../assets/antelope1.jpg"
+import baboon1 from "../assets/baboon1.jpg"
+import bird2 from "../assets/bird2.jpg"
+import birdie from "../assets/birdie.jpg"
+import boatracing from "../assets/boatracing.jpg"
+import cheetah from "../assets/cheetah.jpg"
+import cheetah2 from "../assets/cheetah2.jpg"
+import chimpanzee from "../assets/chimpanzee.jpg"
+import diani from "../assets/diani.jpg"
+import elephant1 from "../assets/elephant1.jpg"
+import elephants2 from "../assets/elephants2.jpg"
+import flamingoes from "../assets/flamingoes.jpg"
+import ghazal from "../assets/ghazal.jpg"
+import leopard from "../assets/leopard.jpg"
+import zebra1 from "../assets/zebra1.jpg"
+import twolions from "../assets/twolions.jpg"
+import room1 from "../assets/room1.jpg"
+import big5 from "../assets/big5.png"
+import migrations from "../assets/migrations.jpg"
+
 
 export default function Landing() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "../../public/cheetah.jpg",
-    "../../public/elephant1.jpg",
-    "../../public/ghazal2.jpg",
-    "../../public/waterfall.jpg",
-    "../../public/hicker.jpg",
-    "../../public/elephants2.jpg",
-    "../../public/zebras2.jpg",
-    "../../public/tourists.jpg",
+    
+      animal2,
+      migrations,
+      antelope1,
+      baboon1,
+      bird2,
+      birdie,
+      twolions,
+      boatracing,
+      cheetah,
+      cheetah2,
+      chimpanzee,
+      diani,
+      elephant1,
+      elephants2,
+      flamingoes,
+      ghazal,
+      leopard,
+    
   ];
 
   const handleNext = () => {
@@ -116,7 +148,7 @@ export default function Landing() {
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
-        src="../../public/zebra1.jpg"
+        src={ zebra1 }
         alt="Zebra"
       />
     </a>
@@ -137,7 +169,7 @@ export default function Landing() {
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
-        src="../../public/chimpanzee.jpg"
+        src= { chimpanzee }
         alt="Chimpanzee"
       />
     </a>
@@ -158,7 +190,7 @@ export default function Landing() {
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
-        src="../../public/room1.jpg"
+        src={room1}
         alt="Room"
       />
     </a>
@@ -183,7 +215,7 @@ export default function Landing() {
       
       <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
         <img 
-          src="../../public/twolions.jpg" 
+          src= { twolions} 
           alt="Kaaba with people surrounding it" 
           className="w-full h-[800px] object-cover rounded-lg shadow-lg"
         />
@@ -214,8 +246,8 @@ export default function Landing() {
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
-            src="../../public/migrations.jpg"
-            alt="Noteworthy technology acquisitions 2021"
+            src={migrations}
+            alt="migrations"
           
           />
         </a>
@@ -233,8 +265,8 @@ export default function Landing() {
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
-            src="../../public/leopard.jpg"
-            alt="Noteworthy technology acquisitions 2021"
+            src={leopard}
+            alt="leopard"
           />
         </a>
         <div className="p-3">
@@ -251,8 +283,8 @@ export default function Landing() {
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
-            src="../../public/big5.png"
-            alt="Noteworthy technology acquisitions 2021"
+            src={big5}
+            alt="big5"
           />
         </a>
         <div className="p-3">

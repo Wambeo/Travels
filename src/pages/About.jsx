@@ -1,4 +1,5 @@
 import React from 'react';
+import animal2 from '../assets/animal2.jpg';
 
 export default function About() {
   return (
@@ -6,7 +7,8 @@ export default function About() {
       
       <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
         <img 
-          src="https://images.pexels.com/photos/18274181/pexels-photo-18274181/free-photo-of-crowd-around-kaaba-in-mecca-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600" 
+          // src="https://images.pexels.com/photos/18274181/pexels-photo-18274181/free-photo-of-crowd-around-kaaba-in-mecca-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600" 
+          src={animal2}
           alt="Kaaba with people surrounding it" 
           className="w-full h-[800px] object-cover rounded-lg shadow-lg"
         />

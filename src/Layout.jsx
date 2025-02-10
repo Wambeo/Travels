@@ -1,5 +1,6 @@
 import { Outlet, Link } from 'react-router-dom'
 import { useState } from 'react';
+import logo from "../public/LOGO.jpeg"
 
 
 
@@ -18,7 +19,7 @@ export default function Layout() {
         <nav className="bg-transparent fixed w-full z-20 top-0 start-0 border-b border-transparent ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="../public/LOGO.jpeg" className="h-8" alt="Logo"/>
+            <img src={logo} className="h-8" alt="Logo"/>
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Africkson</span>
         </a>
 
@@ -218,7 +219,7 @@ export default function Layout() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <a href="" className="flex items-center">
-                  <img src="../public/LOGO.jpeg" className="h-8 me-3" alt="Africkson Logo" />
+                  <img src={logo} className="h-8 me-3" alt="Africkson Logo" />
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Africkson</span>
               </a>
           </div>
@@ -244,10 +245,13 @@ export default function Layout() {
                           <p className="hover:underline ">Nairobi, Kenya</p>
                       </li>
                       <li className="mb-4  md:flex md:justify-between md:items-center">
-                          <p className="hover:underline">africksonsafaris@outlook.com</p>
+                          <p className="hover:underline">africksonsafaris@gmail.com</p>
                       </li>
                       <li className="mb-4">
                           <p className="hover:underline">+254 711 477 574</p>
+                      </li>
+                      <li className="mb-4">
+                          <p className="hover:underline">+254 724 647 982</p>
                       </li>
                       <li className="mb-4">
                            {/* Newsletter */}

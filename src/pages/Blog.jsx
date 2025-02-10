@@ -1,4 +1,5 @@
 import React from 'react';
+import zebras2 from "../assets/zebras2.jpg"
 
 export default function Blog() {
   return (
@@ -26,7 +27,7 @@ export default function Blog() {
             
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://images.pexels.com/photos/18511973/pexels-photo-18511973/free-photo-of-stone-walls-of-fortification-among-arid-rocky-hills.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src= { zebras2}
                 alt="Zebra"
               />
               <div className="p-4">

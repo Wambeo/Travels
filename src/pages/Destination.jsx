@@ -1,18 +1,52 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import animal2 from "../assets/animal2.jpg"
+import antelope1 from "../assets/antelope1.jpg"
+import baboon1 from "../assets/baboon1.jpg"
+import big5 from "../assets/big5.png"
+import bird2 from "../assets/bird2.jpg"
+import birdie from "../assets/birdie.jpg"
+import boatracing from "../assets/boatracing.jpg"
+import cheetah from "../assets/cheetah.jpg"
+import cheetah2 from "../assets/cheetah2.jpg"
+import chimpanzee from "../assets/chimpanzee.jpg"
+import diani from "../assets/diani.jpg"
+import elephant1 from "../assets/elephant1.jpg"
+import elephants2 from "../assets/elephants2.jpg"
+import flamingoes from "../assets/flamingoes.jpg"
+import ghazal from "../assets/ghazal.jpg"
+import leopard from "../assets/leopard.jpg"
+import outdoor1 from "../assets/outdoor1.jpg"
+import giraffe2 from "../assets/giraffe2.jpg"
+import lion2 from "../assets/lion2.jpg"
+import ghazal2 from "../assets/ghazal2.jpg"
+import tourists from "../assets/tourists.jpg"
 
 export default function Destination() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    "../../public/lions.jpg",
-    "../../public/antelope1.jpg",
-    "../../public/birdie.jpg",
-    "../../public/elephant1.jpg",
-    "../../public/elephants2.jpg",
-    "../../public/ghazal.jpg",
-    "../../public/ghazal2.jpg",
-  ];
+   const slides = [
+     
+     animal2,
+     giraffe2,
+     antelope1,
+     baboon1,
+     big5,
+     bird2,
+     boatracing,
+     cheetah,
+     cheetah2,
+     chimpanzee,
+     diani,
+     elephant1,
+     elephants2,
+     flamingoes,
+     ghazal,
+     leopard,
+     birdie,
+     ghazal2
+   
+ ]
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -108,7 +142,7 @@ export default function Destination() {
             <Link to="/destinations/nairobi">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/giraffe2.jpg"
+                src={giraffe2}
                 alt="Zebra"
               />
               <div className="p-4">
@@ -117,8 +151,14 @@ export default function Destination() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                Explore 
+                
                 </p>
+              <a href="#" class="inline-flex items-center px-3 py-2 mt-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
               </div>
             </Link>
           </div>
@@ -128,8 +168,8 @@ export default function Destination() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/lion2.jpg"
-                alt="Zebra"
+                src={lion2}
+                alt="lion"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -137,7 +177,7 @@ export default function Destination() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                Explore -
+                
                 </p>
               </div>
             </Link>
@@ -148,8 +188,8 @@ export default function Destination() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/flamingoes.jpg"
-                alt="Zebra"
+                src={flamingoes}
+                alt="flamingoes"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
@@ -157,7 +197,7 @@ export default function Destination() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Marvel at the beauty of lake nakuru national park, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.
-                Explore -
+                
                 </p>
               </div>
             </Link>
@@ -168,8 +208,8 @@ export default function Destination() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/elephants2.jpg"
-                alt="Zebra"
+                src={elephants2}
+                alt="elephants"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -177,7 +217,7 @@ export default function Destination() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Stand in awe of vast herds of elephants roaming freely beneath the towering Mount kilimanjaro. a perfect safari dreamscape.
-Explore 
+
                 </p>
               </div>
             </Link>
@@ -188,7 +228,7 @@ Explore
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/ghazal2.jpg"
+                src={ghazal2}
                 alt="tourists"
               />
               <div className="p-4">
@@ -197,7 +237,7 @@ Explore
                 </h5>
                 <p className="text-sm text-gray-700">
                 From the striking Yatta plateau to the crystal clear waters of mzima springs, explore the largest park in Kenya where red dusted elephants roam.
-Explore ->
+              
                 </p>
               </div>
             </Link>
@@ -208,8 +248,8 @@ Explore ->
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/tourists.jpg"
-                alt="Zebra"
+                src={tourists}
+                alt="tourists"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -217,7 +257,7 @@ Explore ->
                 </h5>
                 <p className="text-sm text-gray-700">
                 Ascend Africa’s second-highest peak with stunning alpine landscapes, glacial lakes, and unique flora like giant lobelias.
-Explore 
+
                 </p>
               </div>
             </Link>
@@ -228,8 +268,8 @@ Explore
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/diani.jpg"
-                alt="Zebra"
+                src= {diani}
+                alt="diani"
               />
               <div className="p-4">
               <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
@@ -237,7 +277,7 @@ Explore
                 </h5>
                 <p className="text-sm text-gray-700">
                 Sink your toes into powdery white sands. From vibrant coral reefs for snorkeling to thrilling water sports, diani beach is perfect for relaxation or adventure.
-                Explore 
+               
                 </p>
               </div>
             </Link>
@@ -248,7 +288,7 @@ Explore
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/animal2.jpg"
+                src= {animal2}
                 alt="Naivasha"
               />
               <div className="p-4">
@@ -257,8 +297,8 @@ Explore
                 </h5>
                 <p className="text-sm text-gray-700">
                 A haven for nature lovers, thrilling game drives, breathtaking hiking trails, and relaxing at tree-top lodges overlooking waterholes frequented by wildlife.
-Explore 
-                </p>
+
+                </p>              
               </div>
             </Link>
           </div>
@@ -268,16 +308,15 @@ Explore
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="./../public/outdoor1.jpg"
-                alt="Zebra"
+                src={outdoor1}
+                alt="outdoor"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
                 Lake Naivasha
                 </h5>
                 <p className="text-sm text-gray-700">
-                Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley.
-                Explore 
+                Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley. 
                 </p>
               </div>
             </Link>
