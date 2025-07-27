@@ -1,5 +1,7 @@
 import { Outlet, Link } from 'react-router-dom'
 import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import logo from "../public/LOGO.jpeg"
 
 
@@ -30,7 +32,7 @@ export default function Layout() {
             <div>
             <div className="flex gap-x-4 items-center">
   {/* Instagram */}
-  <a href="https://www.instagram.com/afric.ksonsafaris?igsh=NGx1aTlrcGs0cWR0" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/africksonsafaris_/?hl=en" target="_blank" rel="noopener noreferrer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -44,7 +46,7 @@ export default function Layout() {
   </a>
 
   {/* X (Twitter) */}
-  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://x.com/Africkson_" target="_blank" rel="noopener noreferrer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -72,7 +74,7 @@ export default function Layout() {
   </a>
 
   {/*tiktok */}
-  <a href="https://www.tiktok.com/@africkson.safaris?_t=ZM-8t6yHfcVQwA&_r=1" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.tiktok.com/@africksonsafaris_" target="_blank" rel="noopener noreferrer">
   <svg 
      xmlns="http://www.w3.org/2000/svg" 
      width="20" 
@@ -146,35 +148,12 @@ export default function Layout() {
               Uganda
             </a>
             <a
-              href="/destinations/namibia"
+              href="/destinations/tanzania"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             >
-              Namibia
+              Tanzania
             </a>
-            <a
-              href="/destinations/southafrica"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            >
-              South Africa
-            </a>
-            <a
-              href="/destinations/morocco"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            >
-              Morocco
-            </a>
-            <a
-              href="/destinations/zanzibar"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            >
-              Zanzibar
-            </a>
-            <a
-              href="/destinations/madagascar"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            >
-              Madagascar
-            </a>
+           
           </div>
           
         </div>
@@ -210,6 +189,18 @@ export default function Layout() {
         <div className='bg-transparent text-lg pt- container mx-auto'>
                
       </div>
+      <ToastContainer 
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />      
         <Outlet />
           
        

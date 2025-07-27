@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Namibia() {
+export default function Tanzania() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -41,7 +41,7 @@ export default function Namibia() {
         {/* Carousel Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <div className="text-center">
-            <p className="text-xl md:text-4xl mt-4 ">NAMIBIA</p>
+            <p className="text-xl md:text-4xl mt-4 ">TANZANIA</p>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ export default function Namibia() {
       {/* Service Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
         <h1>
-        From the savannas of the Maasai Mara to the sparkling waters of the Indian Ocean, Kenya offers an unforgettable journey of discovery.
+        From the Serengeti’s Great Migration to the tranquil beaches of Zanzibar, Tanzania offers a safari experience as vast as it is unforgettable.
         </h1>
       </div>
 
@@ -108,16 +108,15 @@ export default function Namibia() {
             <Link to="/destinations/nairobi">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/migrations.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Nairobi City Day Trip
+                  Serengeti great Migration
                 </h5>
                 <p className="text-sm text-gray-700">
-                From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                Explore 
+                Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.
                 </p>
               </div>
             </Link>
@@ -128,16 +127,15 @@ export default function Namibia() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/diani.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Maasai Mara National Reserve
+                  Zanzibar Beach Escape
                 </h5>
                 <p className="text-sm text-gray-700">
-                Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                Explore -
+                Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.
                 </p>
               </div>
             </Link>
@@ -148,16 +146,15 @@ export default function Namibia() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/flamingoes.jpg"
+                src="../../public/waterfall.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Lake Nakuru National Park
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Tarangire National Park Safari
                 </h5>
                 <p className="text-sm text-gray-700">
-                Marvel at the beauty of lake nakuru national park, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.
-                Explore -
+                Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.
                 </p>
               </div>
             </Link>
@@ -173,11 +170,10 @@ export default function Namibia() {
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Tsavo National Parks (East and West)
+                  Lake Manyara Safari
                 </h5>
                 <p className="text-sm text-gray-700">
-                From the striking Yatta plateau to the crystal clear waters of mzima springs, explore the largest park in Kenya where red dusted elephants roam.
-                Explore -
+                Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.
                 </p>
               </div>
             </Link>
@@ -193,11 +189,10 @@ export default function Namibia() {
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Mount Kenya 
+                  Maasai Village Cultural Visit
                 </h5>
                 <p className="text-sm text-gray-700">
-                Ascend Africa’s second-highest peak with stunning alpine landscapes, glacial lakes, and unique flora like giant lobelias.
-                Explore 
+                Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.
                 </p>
               </div>
             </Link>
@@ -208,16 +203,15 @@ export default function Namibia() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../tourists2.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Diani Beach
+                  Ngorongoro Crater Safari
                 </h5>
                 <p className="text-sm text-gray-700">
-                Sink your toes into powdery white sands. From vibrant coral reefs for snorkeling to thrilling water sports, diani beach is perfect for relaxation or adventure.
-                Explore 
+                Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.
                 </p>
               </div>
             </Link>
@@ -228,16 +222,15 @@ export default function Namibia() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/tanzania1.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                   Aberdare National Park
+                   Ndutu Calving Safari
                 </h5>
                 <p className="text-sm text-gray-700">
-                A haven for nature lovers, thrilling game drives, breathtaking hiking trails, and relaxing at tree-top lodges overlooking waterholes frequented by wildlife.
-                Explore 
+                Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.
                 </p>
               </div>
             </Link>
@@ -252,12 +245,11 @@ export default function Namibia() {
                 alt="Naivasha"
               />
               <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Lake Naivasha
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Fly-in Serengeti Adventure
                 </h5>
                 <p className="text-sm text-gray-700">
-                Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley.
-                Explore 
+               Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.
                 </p>
               </div>
             </Link>
@@ -268,16 +260,15 @@ export default function Namibia() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/antelope1.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Mount Kilimanjaro Trek
                 </h5>
                 <p className="text-sm text-gray-700">
-                  Here are the biggest enterprise technology acquisitions of 2021
-                  so far, in reverse chronological order.
+                  Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.
                 </p>
               </div>
             </Link>

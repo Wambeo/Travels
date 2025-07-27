@@ -1,5 +1,6 @@
 import { useState, useRef } from "react"
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 
 
@@ -38,7 +39,7 @@ export default function Contact() {
       )
       .then(()=>{
         setLoading(false)
-        alert("Message sent successfully!")
+        toast("Message sent successfully!")
         setForm({
           name: "",
           email: "",

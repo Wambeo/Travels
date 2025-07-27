@@ -95,7 +95,7 @@ export default function Uganda() {
       {/* Service Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
         <h1>
-        From the savannas of the Maasai Mara to the sparkling waters of the Indian Ocean, Kenya offers an unforgettable journey of discovery.
+        Track mountain gorillas through misty rainforests and discover Uganda’s untamed beauty, where jungle meets savannah.
         </h1>
       </div>
 
@@ -108,16 +108,15 @@ export default function Uganda() {
             <Link to="/destinations/nairobi">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/giraffe2.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Nairobi City Day Trip
+                  Bwindi Impenetrable Forest
                 </h5>
                 <p className="text-sm text-gray-700">
-                From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                Explore 
+                Uganda’s crown jewel for primate encounters. Come face to face with the rare mountain gorillas in one of the most magical forests on Earth.
                 </p>
               </div>
             </Link>
@@ -128,16 +127,15 @@ export default function Uganda() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/lion2.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Maasai Mara National Reserve
+                  Murchison Falls
                 </h5>
                 <p className="text-sm text-gray-700">
-                Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                Explore -
+                Home to the thunderous falls on the Nile, Big Five game drives, and boat safaris teeming with hippos and crocs.
                 </p>
               </div>
             </Link>
@@ -153,11 +151,10 @@ export default function Uganda() {
               />
               <div className="p-4">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Lake Nakuru National Park
+                  Batwa Cultural Experiences
                 </h5>
                 <p className="text-sm text-gray-700">
-                Marvel at the beauty of lake nakuru national park, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.
-                Explore -
+                Discover the traditions of the indigenous Batwa pygmies, the ancient forest life of Uganda’s first people, keepers of Bwindi’s secrets.
                 </p>
               </div>
             </Link>
@@ -173,11 +170,10 @@ export default function Uganda() {
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Tsavo National Parks (East and West)
+                  Queen Elizabeth National Park & Lake Mburo & Lake Bunyonyi Safari
                 </h5>
                 <p className="text-sm text-gray-700">
-                From the striking Yatta plateau to the crystal clear waters of mzima springs, explore the largest park in Kenya where red dusted elephants roam.
-                Explore -
+                Famous for tree-climbing lions, volcanic crater lakes, and the wildlife-rich Kazinga Channel.
                 </p>
               </div>
             </Link>
@@ -193,11 +189,10 @@ export default function Uganda() {
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Mount Kenya 
+                  Kampala City Cultural Tour 
                 </h5>
                 <p className="text-sm text-gray-700">
-                Ascend Africa’s second-highest peak with stunning alpine landscapes, glacial lakes, and unique flora like giant lobelias.
-                Explore 
+               Dive into Uganda’s capital with visits to the Uganda Museum, royal tombs, markets, and vibrant local cuisine scenes.
                 </p>
               </div>
             </Link>
@@ -208,16 +203,15 @@ export default function Uganda() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/elephant1.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Diani Beach
+                  Kidepo Valley National Park
                 </h5>
                 <p className="text-sm text-gray-700">
-                Sink your toes into powdery white sands. From vibrant coral reefs for snorkeling to thrilling water sports, diani beach is perfect for relaxation or adventure.
-                Explore 
+                Remote and wild—home to lions, ostriches, and dramatic landscapes rarely seen by mass tourism.
                 </p>
               </div>
             </Link>
@@ -228,16 +222,15 @@ export default function Uganda() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/hicker.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
                 <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                   Aberdare National Park
+                   Kibale National Park
                 </h5>
                 <p className="text-sm text-gray-700">
-                A haven for nature lovers, thrilling game drives, breathtaking hiking trails, and relaxing at tree-top lodges overlooking waterholes frequented by wildlife.
-                Explore 
+                The “Primate Capital of the World”—best known for chimpanzee trekking and lush rainforest biodiversity.
                 </p>
               </div>
             </Link>
@@ -252,12 +245,11 @@ export default function Uganda() {
                 alt="Naivasha"
               />
               <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Lake Naivasha
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Lake Mburo National Park
                 </h5>
                 <p className="text-sm text-gray-700">
-                Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley.
-                Explore 
+                A compact park ideal for walking safaris, cycling, and seeing zebras, giraffes, and hippos up close.
                 </p>
               </div>
             </Link>
@@ -268,16 +260,15 @@ export default function Uganda() {
             <Link to="/service-details/2">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
+                src="../../public/animal2.jpg"
                 alt="Zebra"
               />
               <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Lake Bunyonyi
                 </h5>
                 <p className="text-sm text-gray-700">
-                  Here are the biggest enterprise technology acquisitions of 2021
-                  so far, in reverse chronological order.
+                  A breathtakingly scenic lake with 29 islands—perfect for relaxation, canoeing, and cultural interactions after gorilla trekking.
                 </p>
               </div>
             </Link>

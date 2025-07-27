@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState} from "react";
+import { Link } from 'react-router-dom';
 import animal2 from "../assets/animal2.jpg"
 import antelope1 from "../assets/antelope1.jpg"
 import baboon1 from "../assets/baboon1.jpg"
@@ -80,12 +81,11 @@ export default function Landing() {
             <p className="text-xl md:text-2xl mt-4">A Home Away From Home</p>
             
             <div className="mt-8">
-              <a
-                href="/booknow"
+              <Link to = "/contact"
                 className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-600 transition duration-300"
               >
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function Landing() {
          {/*Cards*/ }
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 px-4 sm:px-8 lg:px-20">
   {/* Small Card 1 */}
-  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
+  <Link to ="/destinations/tanzania" className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
@@ -155,17 +155,17 @@ export default function Landing() {
     <div className="p-4">
       <a href="#">
         <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-          Nairobi City Day Trip, Kenya
+          Tanzania Safaris
         </h5>
       </a>
       <p className="text-sm text-gray-700">
-      From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
+      Experience the Great Migration, vast Serengeti plains, and the majestic Ngorongoro Crater. Our Tanzania itineraries are designed to immerse you in both wild beauty and cultural depth.
       </p>
     </div>
-  </div>
+  </Link>
 
   {/* Small Card 2 */}
-  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
+  <Link to ="/destinations/uganda" className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
@@ -176,17 +176,17 @@ export default function Landing() {
     <div className="p-4">
       <a href="#">
         <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-          Bwindi Impenetrable Forest, Uganda
+          Uganda Safaris
         </h5>
       </a>
       <p className="text-sm text-gray-700">
-      Venture into Uganda’s crown jewel and the Ultimate destination for unforgettable gorilla trekking adventures.
+      Track endangered mountain gorillas through misty forests and cruise along the Nile in Murchison Falls. Discover Uganda’s untamed heart through our curated journeys or personalize your adventure with us.
       </p>
     </div>
-  </div>
+  </Link>
 
   {/* Small Card 3 */}
-  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
+  <Link to ="/destinations" className="bg-white border border-gray-200 rounded-lg shadow dark:bg-white h-[547px]">
     <a href="#">
       <img
         className="rounded-t-lg w-full h-[400px] object-cover"
@@ -197,14 +197,14 @@ export default function Landing() {
     <div className="p-4">
       <a href="#">
         <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-          Ondull Ridge, Namibia
+          Kenya Safaris
         </h5>
       </a>
       <p className="text-sm text-gray-700">
-      Escape into africa’s raw beauty where luxury meets untamed wilderness.
+      From the iconic Masai Mara to the slopes of Mount Kenya, witness wildlife in its rawest form. Explore sample itineraries or let us craft your custom safari through Kenya’s rich and varied landscapes.
       </p>
     </div>
-  </div>
+  </Link>
 </div>
 
 

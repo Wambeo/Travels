@@ -117,7 +117,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                Explore 
+                
                 </p>
               </div>
             </Link>
@@ -137,7 +137,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                Explore -
+                
                 </p>
               </div>
             </Link>
@@ -157,7 +157,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Marvel at the beauty of lake nakuru national park, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.
-                Explore -
+                
                 </p>
               </div>
             </Link>
@@ -177,7 +177,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 From the striking Yatta plateau to the crystal clear waters of mzima springs, explore the largest park in Kenya where red dusted elephants roam.
-                Explore -
+                
                 </p>
               </div>
             </Link>
@@ -197,7 +197,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Ascend Africa’s second-highest peak with stunning alpine landscapes, glacial lakes, and unique flora like giant lobelias.
-                Explore 
+                
                 </p>
               </div>
             </Link>
@@ -217,7 +217,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Sink your toes into powdery white sands. From vibrant coral reefs for snorkeling to thrilling water sports, diani beach is perfect for relaxation or adventure.
-                Explore 
+                
                 </p>
               </div>
             </Link>
@@ -237,7 +237,7 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 A haven for nature lovers, thrilling game drives, breathtaking hiking trails, and relaxing at tree-top lodges overlooking waterholes frequented by wildlife.
-                Explore 
+                
                 </p>
               </div>
             </Link>
@@ -257,31 +257,14 @@ export default function Kenya() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley.
-                Explore 
+                 
                 </p>
               </div>
             </Link>
           </div>
 
           {/* Card9*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-                <p className="text-sm text-gray-700">
-                  Here are the biggest enterprise technology acquisitions of 2021
-                  so far, in reverse chronological order.
-                </p>
-              </div>
-            </Link>
-          </div>
+         
 
         
         </div>
