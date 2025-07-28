@@ -89,7 +89,7 @@ export default function Contact() {
                   <h3 className="text-lg font-semibold mb-2">Our Location</h3>
                   <p className="text-sm">
                     Africkson Safaris <br />
-                    PO BOX 298 – 20107 Nairobi <br />
+                    PO BOX 546, 20107 Njoro <br />
                     Kenya, East Africa.
                   </p>
                 </div>
@@ -104,7 +104,7 @@ export default function Contact() {
                   <h3 className="text-lg font-semibold mb-2">Call Us</h3>
                   <p className="text-sm">
                     +254 711 477 574 <br />
-                    +254 793 715 710
+                    +254 724 647 982
                   </p>
                 </div>
   
