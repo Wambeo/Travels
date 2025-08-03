@@ -36,7 +36,7 @@ export default function Blog() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                Explore 
+                
                 </p>
               </div>
             
@@ -56,7 +56,7 @@ export default function Blog() {
                 </h5>
                 <p className="text-sm text-gray-700">
                 Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                Explore -
+                
                 </p>
               </div>
             
@@ -77,27 +77,60 @@ export default function Blog() {
           </div>
 
           {/* Card 3 */}
-          {Array.from({ length: 4 }).map((_, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-              <a href="#">
-                <img
-                  className="rounded-t-lg w-full h-[400px] object-cover"
-                  src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
-                  alt="Zebra"
-                />
-              </a>
+          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
+            
+              <img
+                className="rounded-t-lg w-full h-[400px] object-cover"
+                src="https://i.pinimg.com/736x/82/bd/e8/82bde84878480d5ab9109da8a7c1d47a.jpg"
+                alt="Zebra"
+              />
               <div className="p-4">
-                <a href="#">
-                  <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                    Jerusalem
-                  </h5>
-                </a>
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Lake Nakuru National Park
+                </h5>
                 <p className="text-sm text-gray-700">
-                  
+                Marvel at The Beauty Of Lake Nakuru National Park, Home To FLamingoes, Rhinos, And Diverse Wildlife In A Stunning, Serene Setting
                 </p>
               </div>
-            </div>
-          ))}
+            
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
+            
+              <img
+                className="rounded-t-lg w-full h-[400px] object-cover"
+                src="https://i.pinimg.com/1200x/ad/76/48/ad7648f8c6f2921ed8912f828f7a9b63.jpg"
+                alt="Zebra"
+              />
+              <div className="p-4">
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Mount Kenya
+                </h5>
+                <p className="text-sm text-gray-700">
+                Ascend Africa's Second-Highest Peak With Stunning Alpine Landscapes, Glacial Lakes, And Unique Flora Like Giant Lobelias.
+                
+                </p>
+              </div>
+            
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
+            
+              <img
+                className="rounded-t-lg w-full h-[400px] object-cover"
+                src="https://i.pinimg.com/1200x/a3/57/84/a3578433c64b76ae5142e1d0001d20c5.jpg"
+                alt="Zebra"
+              />
+              <div className="p-4">
+                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                  Tanzania Safaris 
+                </h5>
+                <p className="text-sm text-gray-700">
+                Experience The Great Migration, Vast Serengeti Plains, And The Majestic Ngorongoro Crater. Our Tanzania Itineraries Are Designed To Immerse You In Both Wild Beauty And Cultural Depth.
+                
+                </p>
+              </div>
+            
+          </div>
+          
         </div>
       </div>
     </div>
