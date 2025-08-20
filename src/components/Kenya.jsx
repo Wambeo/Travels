@@ -125,7 +125,7 @@ export default function Kenya() {
 
           {/* Card2*/}
           <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
+            <Link to="/destinations/mara">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
                 src="https://i.pinimg.com/736x/a6/f8/a1/a6f8a14ab11c37683502d4364264bbc7.jpg"
@@ -145,7 +145,7 @@ export default function Kenya() {
 
           {/* Card3*/}
           <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
+            <Link to="/destinations/nakuru">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
                 src="../../public/flamingoes.jpg"
