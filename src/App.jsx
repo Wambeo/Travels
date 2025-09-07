@@ -14,6 +14,7 @@ import Tanzania from "./components/Tanzania";
 import Services1 from "./components/Services1";
 import Contact from "./pages/Contact";
 import SafariArticle from "./components/SafariArticle";
+import SafariArticle1 from "./components/SafariArticle1";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/destinations" element={<Destination />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog/1" element={<SafariArticle />} />
+             <Route path="/blog/2" element={<SafariArticle1 />} />
             <Route path="/destinations/nairobi" element={<Nairobi />} />
             <Route path="/destinations/mara" element={<Mara />} />
             <Route path="/destinations/kenya" element={<Kenya />} />            
