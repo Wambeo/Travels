@@ -8,10 +8,12 @@ import Destination from "./pages/Destination";
 import Booknow from "./pages/Booknow";
 import Nairobi from "./components/Nairobi";
 import Kenya from "./components/Kenya";
+import Mara from "./components/Mara";
 import Uganda from "./components/Uganda";
 import Tanzania from "./components/Tanzania";
 import Services1 from "./components/Services1";
 import Contact from "./pages/Contact";
+import SafariArticle from "./components/SafariArticle";
 
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
             <Route path="/booknow" element={<Booknow />} />
             <Route path="/destinations" element={<Destination />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog/1" element={<SafariArticle />} />
             <Route path="/destinations/nairobi" element={<Nairobi />} />
+            <Route path="/destinations/mara" element={<Mara />} />
             <Route path="/destinations/kenya" element={<Kenya />} />            
             <Route path="/destinations/uganda" element={<Uganda />} />
             <Route path="/destinations/tanzania" element={<Tanzania />} />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Nairobi() {
+export default function Mara() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [openIndex, setOpenIndex] = useState(null); 
 

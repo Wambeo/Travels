@@ -160,7 +160,7 @@ export default function Destination() {
 
           {/* Card2*/}
           <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
+            <Link to="/destinations/mara">
               <img
                 className="rounded-t-lg w-full h-[400px] object-cover"
                 src={lion2}

@@ -242,7 +242,7 @@ export default function Landing() {
   <div className="bg-orange-200 w-full px-4 py-8">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {/* Image 1 */}
-      <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
+      <Link  to ="/blog/1"className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
         <a href="#">
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
@@ -258,7 +258,7 @@ export default function Landing() {
             </h5>
           </a>
         </div>
-      </div>
+      </Link>
 
       {/* Image 2 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
