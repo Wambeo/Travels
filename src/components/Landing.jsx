@@ -243,56 +243,56 @@ export default function Landing() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {/* Image 1 */}
       <Link  to ="/blog/1"className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
-        <a href="#">
+       
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
             src={migrations}
             alt="migrations"
           
           />
-        </a>
+        
         <div className="p-3">
-          <a href="#">
+          
             <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
             Top 10 Must-See Destinations in Africa for Wildlife Enthusiasts
             </h5>
-          </a>
+          
         </div>
       </Link>
 
       {/* Image 2 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
-        <a href="#">
+        
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
             src={leopard}
             alt="leopard"
           />
-        </a>
+      
         <div className="p-3">
-          <a href="#">
+          
             <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
             A Beginner's Guide to Choosing the Perfect Safari Experience
             </h5>
-          </a>
+         
         </div>
       </div>
 
       {/* Image 3 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full">
-        <a href="#">
+        
           <img
             className="rounded-t-lg w-full h-[400px] object-cover"
             src={big5}
             alt="big5"
           />
-        </a>
+        
         <div className="p-3">
-          <a href="#">
+          
             <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
             The Big Five and Beyond: Fascinating Wildlife You’ll Encounter on Safari
             </h5>
-          </a>
+          
         </div>
       </div>
     </div>
