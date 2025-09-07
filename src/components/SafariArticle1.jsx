@@ -125,7 +125,7 @@ export default function SafariArticle1() {
             {destinations.map((destination, index) => (
               <div
                 key={destination.number}
-                className="group hover:shadow-warm rounded-lg border bg-card text-card-foreground shadow-sm transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in"
+                className="group hover:shadow-warm rounded-lg border bg-gray-200 text-card-foreground shadow-sm transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="pb-3 flex flex-col space-y-1.5 p-6">
@@ -162,7 +162,7 @@ export default function SafariArticle1() {
               {tips.map((tip, index) => (
                 <div 
                   key={tip.title} 
-                  className="border-border/50 bg-card/80 backdrop-blur-sm rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-warm transition-all duration-300"
+                  className="border-border/50 bg-card/80 backdrop-blur-sm rounded-lg border bg-white text-card-foreground shadow-sm hover:shadow-warm transition-all duration-300"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="pb-3 flex flex-col space-y-1.5 p-6">
