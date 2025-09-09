@@ -125,13 +125,13 @@ export default function SafariArticle1() {
             {destinations.map((destination, index) => (
               <div
                 key={destination.number}
-                className="group hover:shadow-warm rounded-lg border bg-gray-200 text-card-foreground shadow-sm transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in"
+                className="group hover:shadow-warm rounded-lg border bg-white text-card-foreground shadow-sm transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="pb-3 flex flex-col space-y-1.5 p-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-safari flex items-center justify-center text-primary-foreground font-bold text-lg shadow-glow">
-                      {destination.number}
+                      
                     </div>
                     <div className="text-xl text-2xl font-semibold leading-none tracking-tight font-bold text-foreground group-hover:text-safari-bronze transition-colors duration-300">
                       {destination.title}
