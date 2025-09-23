@@ -1,52 +1,105 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import animal2 from "../assets/animal2.jpg"
+
 import antelope1 from "../assets/antelope1.jpg"
-import baboon1 from "../assets/baboon1.jpg"
-import big5 from "../assets/big5.png"
-import bird2 from "../assets/bird2.jpg"
 import birdie from "../assets/birdie.jpg"
-import boatracing from "../assets/boatracing.jpg"
-import cheetah from "../assets/cheetah.jpg"
-import cheetah2 from "../assets/cheetah2.jpg"
-import chimpanzee from "../assets/chimpanzee.jpg"
-import diani from "../assets/diani.jpg"
-import elephant1 from "../assets/elephant1.jpg"
-import elephants2 from "../assets/elephants2.jpg"
-import flamingoes from "../assets/flamingoes.jpg"
-import ghazal from "../assets/ghazal.jpg"
+import lions from "../assets/lions.jpg"
 import leopard from "../assets/leopard.jpg"
-import outdoor1 from "../assets/outdoor1.jpg"
-import giraffe2 from "../assets/giraffe2.jpg"
-import lion2 from "../assets/lion2.jpg"
+import elephants2 from "../assets/elephants2.jpg"
 import ghazal2 from "../assets/ghazal2.jpg"
-import tourists from "../assets/tourists.jpg"
+import ghazal from "../assets/ghazal.jpg"
+import flamingoes from "../assets/flamingoes.jpg"
+import tourists from  "../assets/tourists.jpg"
+import diani from  "../assets/diani.jpg"
+import maasai from  "../assets/maasai.jpg"
+import zebras2 from  "../assets/zebras2.jpg"
+import boatracing from  "../assets/boatracing.jpg"
+import baboon1 from  "../assets/baboon1.jpg"
 
-export default function Destination() {
+
+
+export default function Kenya() {
   const [currentSlide, setCurrentSlide] = useState(0);
+ 
 
-   const slides = [
-     
-     animal2,
-     giraffe2,
-     antelope1,
-     baboon1,
-     big5,
-     bird2,
-     boatracing,
-     cheetah,
-     cheetah2,
-     chimpanzee,
-     diani,
-     elephant1,
-     elephants2,
-     flamingoes,
-     ghazal,
-     leopard,
-     birdie,
-     ghazal2
-   
- ]
+  // ✅ Carousel slides
+  const slides = [
+    antelope1,
+    antelope1,
+    birdie,  leopard,
+    elephants2,
+    ghazal,
+    ghazal2,
+    lions,
+  ];
+
+  // ✅ Cards data
+  const cards = [
+    {
+      title: "Nairobi City Day Trip",
+      description:
+        "From bustling markets to wildlife adventures, explore the only city with a national park, where urban energy meets natural beauty.",
+      image: zebras2,
+      link: "/destinations/nairobi",
+    },
+    {
+      title: "Maasai Mara National Reserve",
+      description:
+        "Witness the awe-inspiring Great Migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife.",
+      image: maasai,
+      link: "/destinations/mara",
+    },
+    {
+      title: "Lake Nakuru National Park",
+      description:
+        "Marvel at the beauty of Lake Nakuru, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.",
+      image: flamingoes,
+      link: "/destinations/nakuru",
+    },
+    {
+      title: "Tsavo National Parks",
+      description:
+        "From the Yatta Plateau to Mzima Springs, explore Kenya’s largest park where red-dusted elephants roam freely.",
+      image: ghazal2,
+      link: "/destinations/tsavo",
+    },
+    {
+      title: "Mount Kenya",
+      description:
+        "Ascend Africa’s second-highest peak with alpine landscapes, glacial lakes, and unique flora like giant lobelias.",
+      image: tourists,
+      link: "/destinations/mount-kenya",
+    },
+    {
+      title: "Diani Beach",
+      description:
+        "Sink your toes into white sands, snorkel vibrant reefs, or enjoy thrilling water sports on Kenya’s famous coast.",
+      image: diani,
+      link: "/destinations/diani",
+    },
+    {
+      title: "Aberdare National Park",
+      description:
+        "A haven for nature lovers with game drives, hiking trails, and tree-top lodges overlooking wildlife at watering holes.",
+      image: baboon1,
+      link: "/destinations/aberdare",
+    },
+    {
+      title: "Lake Naivasha",
+      description:
+        "Enjoy peaceful boat rides among hippos and birds, or relax with views of the Great Rift Valley at Lake Naivasha.",
+      image: boatracing,
+      link: "/destinations/naivasha",
+    },
+  ];
+
+  // ✅ Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -57,31 +110,24 @@ export default function Destination() {
   };
 
   return (
-    <div className="bg-orange-200 min-h-screen">
-      {/* Carousel */}
-      <div className="relative w-full h-[970px] overflow-hidden bg-orange-400">
-        {/* Carousel Background */}
+    <div className="bg-orange-200 min-h-screen flex flex-col">
+      {/* ✅ Carousel */}
+      <div className="relative w-full h-[80vh] overflow-hidden bg-orange-400 mb-16">
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-700"
           style={{
             backgroundImage: `url(${slides[currentSlide]})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
           }}
         />
-
         <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-        {/* Carousel Content */}
+        {/* Carousel text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <div className="text-center">
-            <p className="text-xl md:text-4xl mt-4 ">KENYA</p>
-          </div>
+          <p className="text-xl md:text-5xl font-bold">KENYA</p>
         </div>
 
-        {/* Previous Button */}
+        {/* Prev Button */}
         <button
-          type="button"
           onClick={handlePrev}
           className="absolute top-1/2 left-5 z-30 transform -translate-y-1/2 flex items-center justify-center px-4 py-2 bg-transparent rounded-full hover:bg-gray-800/90"
         >
@@ -104,7 +150,6 @@ export default function Destination() {
 
         {/* Next Button */}
         <button
-          type="button"
           onClick={handleNext}
           className="absolute top-1/2 right-5 z-30 transform -translate-y-1/2 flex items-center justify-center px-4 py-2 bg-transparent rounded-full hover:bg-gray-800/90"
         >
@@ -126,198 +171,37 @@ export default function Destination() {
         </button>
       </div>
 
-      {/* Service Description */}
-      <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
-        <h1>
-        From the savannas of the Maasai Mara to the sparkling waters of the Indian Ocean, Kenya offers an unforgettable journey of discovery.
+      {/* ✅ Service Description */}
+      <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-6 md:p-10">
+        <h1 className="max-w-4xl text-center leading-relaxed">
+          From the savannas of the Maasai Mara to the sparkling waters of the
+          Indian Ocean, Kenya offers an unforgettable journey of discovery.
         </h1>
       </div>
 
-      {/* Cards Section */}
-      <div className="flex justify-center items-center w-full">
+      {/* ✅ Cards */}
+      <div className="flex justify-center items-center w-full mb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
-
-          {/* Card1*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/destinations/nairobi">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={giraffe2}
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Nairobi City Day Trip
-                </h5>
-                <p className="text-sm text-gray-700">
-                From bustling markets to wildlife adventures, Explore the only city with a national park, where urban energy meets natural beauty.
-                
-                </p>
-             
-              </div>
-            </Link>
-          </div>
-
-          {/* Card2*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/destinations/mara">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={lion2}
-                alt="lion"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Maasai Mara National Reserve
-                </h5>
-                <p className="text-sm text-gray-700">
-                Witness the awe-inspiring Great migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife
-                
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card3*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={flamingoes}
-                alt="flamingoes"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                  Lake Nakuru National Park
-                </h5>
-                <p className="text-sm text-gray-700">
-                Marvel at the beauty of lake nakuru national park, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.
-                
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card4*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={elephants2}
-                alt="elephants"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Amboseli National Park
-                </h5>
-                <p className="text-sm text-gray-700">
-                Stand in awe of vast herds of elephants roaming freely beneath the towering Mount kilimanjaro. a perfect safari dreamscape.
-
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card5*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={ghazal2}
-                alt="tourists"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                Tsavo National Parks (East and West)
-                </h5>
-                <p className="text-sm text-gray-700">
-                From the striking Yatta plateau to the crystal clear waters of mzima springs, explore the largest park in Kenya where red dusted elephants roam.
-              
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card6*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={tourists}
-                alt="tourists"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                Mount Kenya
-                </h5>
-                <p className="text-sm text-gray-700">
-                Ascend Africa’s second-highest peak with stunning alpine landscapes, glacial lakes, and unique flora like giant lobelias.
-
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card7*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src= {diani}
-                alt="diani"
-              />
-              <div className="p-4">
-              <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Diani Beach
-                </h5>
-                <p className="text-sm text-gray-700">
-                Sink your toes into powdery white sands. From vibrant coral reefs for snorkeling to thrilling water sports, diani beach is perfect for relaxation or adventure.
-               
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card8*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src= {animal2}
-                alt="Naivasha"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                Aberdare National Park
-                </h5>
-                <p className="text-sm text-gray-700">
-                A haven for nature lovers, thrilling game drives, breathtaking hiking trails, and relaxing at tree-top lodges overlooking waterholes frequented by wildlife.
-
-                </p>              
-              </div>
-            </Link>
-          </div>
-
-          {/* Card9*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src={outdoor1}
-                alt="outdoor"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
-                Lake Naivasha
-                </h5>
-                <p className="text-sm text-gray-700">
-                Lake Naivasha offers a serene escape for nature walks, peaceful boat rides among hippos and vibrant birdlife, enjoy stunning views of the Great rift valley. 
-                </p>
-              </div>
-            </Link>
-          </div>
-
-        
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-lg shadow h-[450px] hover:shadow-lg hover:scale-105 transition-transform duration-300"
+            >
+              <Link to={card.link}>
+                <img
+                  className="rounded-t-lg w-full h-[280px] object-cover"
+                  src={card.image}
+                  alt={card.title}
+                />
+                <div className="p-4">
+                  <h5 className="mb-2 text-md font-bold text-gray-900">
+                    {card.title}
+                  </h5>
+                  <p className="text-sm text-gray-700">{card.description}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>

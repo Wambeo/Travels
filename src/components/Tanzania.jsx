@@ -14,6 +14,72 @@ export default function Tanzania() {
     "../../public/ghazal2.jpg",
   ];
 
+  const cards = [
+    {
+      img: "../../public/migrations.jpg",
+      title: "Serengeti Great Migration",
+      description:
+        "Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.",
+      link: "/destinations/nairobi",
+    },
+    {
+      img: "../../public/diani.jpg",
+      title: "Zanzibar Beach Escape",
+      description:
+        "Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/waterfall.jpg",
+      title: "Tarangire National Park Safari",
+      description:
+        "Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/ghazal2.jpg",
+      title: "Lake Manyara Safari",
+      description:
+        "Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/tourists.jpg",
+      title: "Maasai Village Cultural Visit",
+      description:
+        "Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../tourists2.jpg",
+      title: "Ngorongoro Crater Safari",
+      description:
+        "Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/tanzania1.jpg",
+      title: "Ndutu Calving Safari",
+      description:
+        "Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/outdoor1.jpg",
+      title: "Fly-in Serengeti Adventure",
+      description:
+        "Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.",
+      link: "/service-details/2",
+    },
+    {
+      img: "../../public/antelope1.jpg",
+      title: "Mount Kilimanjaro Trek",
+      description:
+        "Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.",
+      link: "/service-details/2",
+    },
+  ];
+
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -24,9 +90,8 @@ export default function Tanzania() {
 
   return (
     <div className="bg-orange-200 min-h-screen">
-      {/* Carousel */}
-      <div className="relative w-full h-[970px] overflow-hidden bg-orange-400">
-        {/* Carousel Background */}
+           {/* Carousel */}
+      <div className="relative w-full h-[80vh] overflow-hidden bg-orange-400 mb-16">
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-700"
           style={{
@@ -35,17 +100,17 @@ export default function Tanzania() {
             backgroundPosition: "center",
           }}
         />
-
         <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-        {/* Carousel Content */}
+        {/* Carousel Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <div className="text-center">
-            <p className="text-xl md:text-4xl mt-4 ">TANZANIA</p>
+            <p className="text-xl md:text-4xl mt-4">TANZANIA</p>
           </div>
         </div>
 
-        {/* Previous Button */}
+
+        {/* Prev Button */}
         <button
           type="button"
           onClick={handlePrev}
@@ -95,186 +160,44 @@ export default function Tanzania() {
       {/* Service Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
         <h1>
-        From the Serengeti’s Great Migration to the tranquil beaches of Zanzibar, Tanzania offers a safari experience as vast as it is unforgettable.
+          From the Serengeti’s Great Migration to the tranquil beaches of Zanzibar, Tanzania
+          offers a safari experience as vast as it is unforgettable.
         </h1>
       </div>
 
+      {/* Section Title */}
+      <div className="text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          Top Experiences in Tanzania
+        </h2>
+        <p className="text-gray-600 mt-2">
+          Explore the must-see destinations and cultural highlights of Tanzania
+        </p>
+      </div>
+
       {/* Cards Section */}
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full mb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
-
-          {/* Card1*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/destinations/nairobi">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/migrations.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Serengeti great Migration
-                </h5>
-                <p className="text-sm text-gray-700">
-                Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card2*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/diani.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Zanzibar Beach Escape
-                </h5>
-                <p className="text-sm text-gray-700">
-                Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card3*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/waterfall.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Tarangire National Park Safari
-                </h5>
-                <p className="text-sm text-gray-700">
-                Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card4*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/ghazal2.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Lake Manyara Safari
-                </h5>
-                <p className="text-sm text-gray-700">
-                Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card5*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/tourists.jpg"
-                alt="tourists"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Maasai Village Cultural Visit
-                </h5>
-                <p className="text-sm text-gray-700">
-                Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card6*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../tourists2.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Ngorongoro Crater Safari
-                </h5>
-                <p className="text-sm text-gray-700">
-                Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card7*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/tanzania1.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                   Ndutu Calving Safari
-                </h5>
-                <p className="text-sm text-gray-700">
-                Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card8*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/outdoor1.jpg"
-                alt="Naivasha"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Fly-in Serengeti Adventure
-                </h5>
-                <p className="text-sm text-gray-700">
-               Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-          {/* Card9*/}
-          <div className="bg-white border border-gray-200 rounded-lg shadow h-[547px]">
-            <Link to="/service-details/2">
-              <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
-                src="../../public/antelope1.jpg"
-                alt="Zebra"
-              />
-              <div className="p-4">
-                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
-                  Mount Kilimanjaro Trek
-                </h5>
-                <p className="text-sm text-gray-700">
-                  Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.
-                </p>
-              </div>
-            </Link>
-          </div>
-
-        
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-orange-100 border border-gray-200 rounded-lg shadow h-[420px] transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <Link to={card.link}>
+                <img
+                  className="rounded-t-lg w-full h-[260px] object-cover"
+                  src={card.img}
+                  alt={card.title}
+                />
+                <div className="p-4">
+                  <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900">
+                    {card.title}
+                  </h5>
+                  <p className="text-sm text-gray-700">{card.description}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>
