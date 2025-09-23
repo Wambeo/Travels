@@ -264,14 +264,34 @@ export default function Landing() {
                 <Link
                   key={idx}
                   to={blog.link}
-                  className="bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full"
+                  className="group relative bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full overflow-hidden"
                 >
+                  {/* Blog image */}
                   <img
-                    className="rounded-t-lg w-full h-[400px] object-cover"
+                    className="rounded-t-lg w-full h-[400px] object-cover transition duration-500 group-hover:opacity-60"
                     src={blog.image}
                     alt={blog.title}
                   />
-                  <div className="p-3">
+
+                  {/* Common hover background */}
+                  <div
+                    className="absolute top-0 left-0 w-full h-[400px] opacity-0 group-hover:opacity-100 transition duration-500 -z-10"
+                    style={{
+                      backgroundImage: `url('/hover-bg.jpg')`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  ></div>
+
+                  {/* Circle overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <div className="bg-orange-600 text-white font-bold rounded-full w-32 h-32 flex items-center justify-center shadow-lg">
+                      See More
+                    </div>
+                  </div>
+
+                  {/* Blog title */}
+                  <div className="p-3 relative z-10">
                     <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
                       {blog.title}
                     </h5>
