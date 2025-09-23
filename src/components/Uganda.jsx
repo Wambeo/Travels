@@ -1,70 +1,73 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ug1 from "../assets/ug1.jpg"
+import ug2 from "../assets/ug2.jpg"
+import ug3 from "../assets/ug3.jpg"
+import ug4 from "../assets/ug4.jpg"
+import ug5 from "../assets/ug5.jpg"
+import ug6 from "../assets/ug6.jpg"
+import ug7 from "../assets/ug7.jpg"
+import ug8 from "../assets/ug8.jpg"
+import ug9 from "../assets/ug9.jpg"
+import ug10 from "../assets/ug10.jpg"
+
 
 export default function Uganda() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    "../../public/lions.jpg",
-    "../../public/antelope1.jpg",
-    "../../public/birdie.jpg",
-    "../../public/elephant1.jpg",
-    "../../public/elephants2.jpg",
-    "../../public/ghazal.jpg",
-    "../../public/ghazal2.jpg",
-  ];
+  const slides = [ug1, ug2, ug3, ug4, ug1, ug5, ug6, ug7, ug8, ug9, ug10];
 
   const cards = [
     {
-      img: "../../public/giraffe2.jpg",
+      img: ug1,
       title: "Bwindi Impenetrable Forest",
       desc: "Uganda’s crown jewel for primate encounters. Come face to face with the rare mountain gorillas in one of the most magical forests on Earth.",
       link: "/destinations/nairobi",
     },
     {
-      img: "../../public/lion2.jpg",
+      img: ug2,
       title: "Murchison Falls",
       desc: "Home to the thunderous falls on the Nile, Big Five game drives, and boat safaris teeming with hippos and crocs.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/flamingoes.jpg",
+      img: ug3,
       title: "Batwa Cultural Experiences",
       desc: "Discover the traditions of the indigenous Batwa pygmies, the ancient forest life of Uganda’s first people, keepers of Bwindi’s secrets.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/ghazal2.jpg",
+      img: ug4,
       title: "Queen Elizabeth National Park & Lake Mburo & Lake Bunyonyi Safari",
       desc: "Famous for tree-climbing lions, volcanic crater lakes, and the wildlife-rich Kazinga Channel.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/tourists.jpg",
+      img: ug5,
       title: "Kampala City Cultural Tour",
       desc: "Dive into Uganda’s capital with visits to the Uganda Museum, royal tombs, markets, and vibrant local cuisine scenes.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/elephant1.jpg",
+      img: ug6,
       title: "Kidepo Valley National Park",
       desc: "Remote and wild—home to lions, ostriches, and dramatic landscapes rarely seen by mass tourism.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/hicker.jpg",
+      img: ug7,
       title: "Kibale National Park",
       desc: "The “Primate Capital of the World”—best known for chimpanzee trekking and lush rainforest biodiversity.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/outdoor1.jpg",
+      img: ug8,
       title: "Lake Mburo National Park",
       desc: "A compact park ideal for walking safaris, cycling, and seeing zebras, giraffes, and hippos up close.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/animal2.jpg",
+      img: ug9,
       title: "Lake Bunyonyi",
       desc: "A breathtakingly scenic lake with 29 islands—perfect for relaxation, canoeing, and cultural interactions after gorilla trekking.",
       link: "/service-details/2",

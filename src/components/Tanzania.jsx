@@ -1,78 +1,80 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import tz1 from "../assets/tz1.jpg"
+import tz2 from "../assets/tz2.jpg"
+import tz3 from "../assets/tz3.jpg"
+import tz4 from "../assets/tz4.jpg"
+import tz5 from "../assets/tz5.jpg"
+import tz6 from "../assets/tz6.jpg"
+import tz7 from "../assets/tz7.jpg"
+import tz8 from "../assets/tz8.jpg"
+import tz9 from "../assets/tz9.jpg"
+import tz10 from "../assets/tz10.jpg"
 
 export default function Tanzania() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    "../../public/lions.jpg",
-    "../../public/antelope1.jpg",
-    "../../public/birdie.jpg",
-    "../../public/elephant1.jpg",
-    "../../public/elephants2.jpg",
-    "../../public/ghazal.jpg",
-    "../../public/ghazal2.jpg",
-  ];
+  const slides = [tz1, tz2, tz3, tz4, tz5, tz6, tz7, tz8, tz9, tz10];
 
   const cards = [
     {
-      img: "../../public/migrations.jpg",
+      img: tz7,
       title: "Serengeti Great Migration",
       description:
         "Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.",
       link: "/destinations/nairobi",
     },
     {
-      img: "../../public/diani.jpg",
+      img: tz3,
       title: "Zanzibar Beach Escape",
       description:
         "Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/waterfall.jpg",
+      img: tz4,
       title: "Tarangire National Park Safari",
       description:
         "Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/ghazal2.jpg",
+      img: tz5,
       title: "Lake Manyara Safari",
       description:
         "Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/tourists.jpg",
+      img: tz6,
       title: "Maasai Village Cultural Visit",
       description:
         "Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.",
       link: "/service-details/2",
     },
     {
-      img: "../../tourists2.jpg",
+      img: tz9,
       title: "Ngorongoro Crater Safari",
       description:
         "Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/tanzania1.jpg",
+      img: tz8,
       title: "Ndutu Calving Safari",
       description:
         "Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/outdoor1.jpg",
+      img: tz1,
       title: "Fly-in Serengeti Adventure",
       description:
         "Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.",
       link: "/service-details/2",
     },
     {
-      img: "../../public/antelope1.jpg",
+      img: tz2,
       title: "Mount Kilimanjaro Trek",
       description:
         "Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.",
