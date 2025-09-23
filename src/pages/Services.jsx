@@ -57,63 +57,63 @@ export default function Services() {
       id: 1,
       title: "Car Hire",
       img: cars,
-      desc: "Explore Africa at your own pace with rugged 4x4s, sedans, or vans for every adventure.",
+      desc: "Explore Africa at your own pace. Whether you need a rugged 4x4 for safari adventures, a comfortable sedan for city tours, or a spacious van for group travel we’ve got you covered.",
       link: "/services/service1",
     },
     {
       id: 2,
       title: "Custom Tours",
       img: park1,
-      desc: "Design your dream adventure with every detail planned just for you.",
+      desc: "Design your dream adventure and explore Africa your way, with every detail planned just for you to ensure your journey is as extraordinary as you envision.",
       link: "/service-details/2",
     },
     {
       id: 3,
       title: "Group Safaris",
       img: tanzania1,
-      desc: "Travel with like-minded explorers across Africa’s landscapes and wildlife.",
+      desc: "Enjoy the camaraderie of exploring Africa’s iconic landscapes, abundant wildlife, and hidden gems with like-minded travelers on our expertly curated group safaris.",
       link: "/service-details/3",
     },
     {
       id: 4,
       title: "Cultural & Heritage Tours",
       img: maasai,
-      desc: "Engage with local communities and experience Africa’s rich cultural heritage.",
+      desc: "From visiting ancient archaeological sites and iconic landmarks to engaging with local communities, these tours offer an authentic journey into the heart of Africa’s heritage.",
       link: "/service-details/4",
     },
     {
       id: 5,
       title: "Eco & Sustainable Tours",
       img: eco,
-      desc: "Learn about conservation efforts and support eco-friendly communities.",
+      desc: "Engage in eco-friendly tours, learn about local conservation efforts, and support communities that rely on sustainable resources.",
       link: "/service-details/5",
     },
     {
       id: 6,
       title: "Adventure Sports & Expeditions",
       img: boatracing,
-      desc: "From rafting and mountain climbing to skydiving, Africa has it all.",
+      desc: "Explore Africa’s rugged terrain and push your limits. From scaling mountains and white-water rafting to skydiving and dune bashing, we offer experiences for adrenaline seekers of all kinds.",
       link: "/service-details/6",
     },
     {
       id: 7,
       title: "Special Interest Tours",
       img: bird2,
-      desc: "Tailored trips for photographers, birdwatchers, foodies, and history lovers.",
+      desc: "We craft personalized itineraries to match your passions. Whether photography, birdwatching, culinary exploration, or history, our expert guides are here for you.",
       link: "/service-details/7",
     },
     {
       id: 8,
       title: "Wellness & Retreats",
       img: massage,
-      desc: "Relax with yoga, meditation, spa treatments, and holistic therapies.",
+      desc: "Reconnect with your mind, body, and spirit. Our packages offer relaxation and rejuvenation, featuring yoga sessions, meditation, spa treatments, and holistic therapies.",
       link: "/service-details/8",
     },
     {
       id: 9,
       title: "Luxury Travel",
       img: luxury,
-      desc: "Experience Africa in luxury with private lodges, gourmet dining, and scenic escapes.",
+      desc: "Experience Africa in unparalleled style and comfort with bespoke packages. Stay in opulent lodges, exclusive resorts, or private villas, with gourmet dining and scenic escapes.",
       link: "/service-details/9",
     },
   ];
@@ -128,7 +128,7 @@ export default function Services() {
     setLoading(true);
   };
 
-  // Auto slide every 4s
+  // Auto slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
@@ -140,7 +140,6 @@ export default function Services() {
     <div className="bg-orange-200 min-h-screen">
       {/* Carousel */}
       <div className="relative w-full h-[70vh] overflow-hidden bg-orange-400">
-        {/* Carousel Background */}
         <div className="absolute inset-0">
           {loading && (
             <div className="flex items-center justify-center h-full">
@@ -157,7 +156,6 @@ export default function Services() {
           />
         </div>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40" />
 
         {/* Content */}
@@ -169,7 +167,7 @@ export default function Services() {
         <button
           type="button"
           onClick={handlePrev}
-          className="absolute top-1/2 left-5 z-30 transform -translate-y-1/2 flex items-center justify-center px-3 py-2 bg-black/30 rounded-full hover:bg-black/60"
+          className="absolute top-1/2 left-5 z-30 transform -translate-y-1/2 px-3 py-2 bg-black/30 rounded-full hover:bg-black/60"
         >
           <svg
             className="w-6 h-6 text-white"
@@ -191,7 +189,7 @@ export default function Services() {
         <button
           type="button"
           onClick={handleNext}
-          className="absolute top-1/2 right-5 z-30 transform -translate-y-1/2 flex items-center justify-center px-3 py-2 bg-black/30 rounded-full hover:bg-black/60"
+          className="absolute top-1/2 right-5 z-30 transform -translate-y-1/2 px-3 py-2 bg-black/30 rounded-full hover:bg-black/60"
         >
           <svg
             className="w-6 h-6 text-white"
@@ -225,11 +223,11 @@ export default function Services() {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-white border border-gray-200 rounded-lg shadow h-[400px] hover:shadow-lg transition"
+              className="bg-white border border-gray-200 rounded-lg shadow h-[420px] hover:shadow-lg transition"
             >
               <Link to={card.link}>
                 <img
-                  className="rounded-t-lg w-full h-[280px] object-cover"
+                  className="rounded-t-lg w-full h-[220px] object-cover"
                   src={card.img}
                   alt={card.title}
                 />
