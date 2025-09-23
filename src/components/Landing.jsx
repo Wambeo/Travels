@@ -228,15 +228,24 @@ export default function Landing() {
           <h1 className="text-3xl text-gray-800 mb-4">ABOUT</h1>
           <p className="text-gray-700 text-lg mb-4">
             Founded in 2018, Africkson Safaris had a vision to share the vibrant
-            essence of Africa with the rest of the world...
+            essence of Africa with the rest of the world. Our passion is rooted
+            in creating meaningful connections by welcoming you into our
+            cultures with warmth and authenticity, ensuring you feel at home, a
+            home away from home.
           </p>
           <p className="text-gray-700 text-lg mb-4">
             Our tours are more than just adventures; they are opportunities to
-            immerse yourself in Africa's rich culture...
+            immerse yourself in Africa's rich culture. We will indulge you in
+            the traditions and stories of our communities, savor the flavors of
+            local cuisine, and discover Africa through the eyes of its people.
+            As you journey with us, you'll also explore the continent's
+            landscapes, from breathtaking wildlife safaris to caves, forests,
+            the Great Migration, and so much more.
           </p>
           <p className="text-gray-700 text-lg">
             Our goal is to ensure your experience is unforgettable, heartfelt,
-            and filled with wonder...
+            and filled with wonder, where every moment tells a story, and every
+            journey feels like coming home.
           </p>
         </div>
       </div>
