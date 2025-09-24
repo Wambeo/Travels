@@ -221,7 +221,7 @@ export default function Landing() {
           <img
             src={twolions}
             alt="Two lions"
-            className="w-full h-[800px] object-cover rounded-lg shadow-lg"
+            className="w-full h-[70vh] object-cover rounded-lg shadow-lg"
           />
         </div>
         <div className="w-full lg:w-1/2 text-center lg:text-left lg:ml-8">
@@ -264,11 +264,11 @@ export default function Landing() {
                 <Link
                   key={idx}
                   to={blog.link}
-                  className="group relative bg-white border border-gray-200 rounded-lg shadow h-[500px] w-full overflow-hidden"
+                  className="group relative bg-white border border-gray-200 rounded-lg shadow h-[400px] w-full overflow-hidden"
                 >
                   {/* Blog image */}
                   <img
-                    className="rounded-t-lg w-full h-[400px] object-cover transition duration-500 group-hover:opacity-60"
+                    className="rounded-t-lg w-full h-[300px] object-cover transition duration-500 group-hover:opacity-60"
                     src={blog.image}
                     alt={blog.title}
                   />
