@@ -197,10 +197,10 @@ export default function Landing() {
             <Link
               key={idx}
               to={dest.link}
-              className="bg-white border border-gray-200 rounded-lg shadow h-[547px]"
+              className="bg-white border border-gray-200 rounded-lg shadow h-[480px]"
             >
               <img
-                className="rounded-t-lg w-full h-[400px] object-cover"
+                className="rounded-t-lg w-full h-[300px] object-cover"
                 src={dest.image}
                 alt={dest.title}
               />
