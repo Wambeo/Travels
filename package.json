@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@carlos8a/react-whatsapp-floating-button": "^1.1.5",
     "@emailjs/browser": "^4.4.1",
     "alpinejs": "^3.14.8",
     "emailjs": "^4.0.3",
