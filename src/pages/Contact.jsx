@@ -136,7 +136,7 @@ export default function Contact() {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Tell us more about your project..."
+                placeholder="Tell us more..."
                 rows="4"
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
@@ -204,10 +204,10 @@ export default function Contact() {
             {/* Spanish Office */}
             <div className="bg-white shadow rounded-2xl p-6">
               <h4 className="font-semibold text-[#0a0f1c] mb-2">
-                 Spain Office
+                 Barcelona Office
               </h4>
               <p className="text-gray-500 text-sm">
-                Address: Ametlla de Casserres, Barcelona, Spain
+                Casa Ametlla , Camí de Santa Rosa s/n 08680 Ametlla de Casserres (Barcelona)
               </p>
               <p className="text-gray-500 text-sm mt-2">
                 📞 +34 938 228 860 <br />
