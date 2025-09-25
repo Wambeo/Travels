@@ -266,7 +266,7 @@ export default function Layout() {
                     <p className="hover:underline">{t("location")}</p>
                   </li>
                   <li className="mb-4">
-                    <p className="hover:underline">africksonsafaris@gmail.com</p>
+                    <p className="hover:underline">africksonsafarisbarcelona@gmail.com</p>
                   </li>
                   <li className="mb-4">
                     <p className="hover:underline">+254 711 477 574</p>
