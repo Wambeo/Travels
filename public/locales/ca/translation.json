@@ -1,0 +1,327 @@
+{
+  "home": "Inici",
+  "destinations": "Destinacions",
+  "blog": "Bloc",
+  "services": "Serveis",
+  "contact": "Contacte",
+
+  "about": "Sobre nosaltres",
+  "contactUs": "Contacta'ns",
+  "privacyPolicy": "Política de Privacitat",
+  "termsOfService": "Termes del Servei",
+  "contactHeader": "Contacta'ns",
+  "location": "Nairobi, Kènia",
+  "newsletter": "Subscriu-te al nostre butlletí",
+  "subscribe": "Subscriure's",
+  "heroTitle": "Africkson Safaris",
+  "heroSubtitle": "Una llar lluny de casa",
+  "bookNow": "Reserva ara",
+  "popularDestinations": "Destinacions Populars",
+
+  "aboutTitle": "Sobre nosaltres",
+  "about1": "Fundada el 2018, Africkson Safaris tenia la visió de compartir l'essència vibrant de l'Àfrica amb la resta del món. La nostra passió es basa en crear connexions significatives tot donant-te la benvinguda a les nostres cultures amb calidesa i autenticitat, assegurant que et sentis com a casa, una llar lluny de casa.",
+  "about2": "Les nostres rutes són més que simples aventures; són oportunitats per submergir-te en la rica cultura africana. Et convidarem a gaudir de les tradicions i històries de les nostres comunitats, assaborir els sabors de la cuina local i descobrir l'Àfrica a través dels ulls de la seva gent. A mesura que viatgis amb nosaltres, també exploraràs els paisatges del continent, des de safaris impressionants fins a coves, boscos, la Gran Migració i molt més.",
+  "about3": "El nostre objectiu és garantir que la teva experiència sigui inoblidable, sincera i plena de meravella, on cada moment expliqui una història i cada viatge se senti com tornar a casa.",
+
+  "seeMore": "Veure més",
+
+  "tanzaniaTitle": "Safaris a Tanzània",
+  "tanzaniaDesc": "Viu la Gran Migració al Serengeti, meravella't amb les sabanes infinites i gaudeix de les vistes impressionants del Mont Kilimanjaro.",
+  "ugandaTitle": "Safaris a Uganda",
+  "ugandaDesc": "Segueix els goril·les de muntanya en perill d'extinció en el seu hàbitat natural, navega pel Nil i explora exuberants selves tropicals.",
+  "kenyaTitle": "Safaris a Kènia",
+  "kenyaDesc": "Des de la mundialment famosa Reserva Masai Mara i la seva abundant fauna fins a les impressionants platges costaneres, Kènia ofereix una barreja perfecta d'aventura i relaxació.",
+
+  "blog1": "Els 10 destins imprescindibles a l'Àfrica",
+  "blog2": "Guia per a principiants: com planificar el teu primer safari",
+  "blog3": "Els Cinc Grans i més enllà: descobrint la fauna de l'Àfrica Oriental",
+
+  "rights": "© 2023 Africkson™. Tots els drets reservats.",
+  "servicesTitle": "ELS NOSTRES SERVEIS",
+  "servicesDesc": "Amb un equip de guies turístics professionals, conductors i cuiners, estem dedicats a oferir-te el millor servei i experiència que valgui la pena.",
+
+  "carHireTitle": "Lloguer de Cotxes",
+  "carHireDesc": "Explora l'Àfrica al teu ritme. Tant si necessites un 4x4 robust per a safaris, un sedan còmode per a rutes urbanes o una furgoneta espaiosa per a viatges en grup, ho tenim tot preparat.",
+
+  "customToursTitle": "Tours Personalitzats",
+  "customToursDesc": "Dissenya la teva aventura somiada i explora l'Àfrica a la teva manera, amb cada detall planificat perquè el viatge sigui tan extraordinari com t'imagines.",
+
+  "groupSafarisTitle": "Safaris en Grup",
+  "groupSafarisDesc": "Gaudeix de la companyonia d'explorar els paisatges icònics de l'Àfrica, la seva abundant fauna i els tresors amagats amb viatgers afins en els nostres safaris organitzats.",
+
+  "culturalToursTitle": "Tours Culturals i de Patrimoni",
+  "culturalToursDesc": "Des de visitar jaciments arqueològics antics i monuments icònics fins a interactuar amb comunitats locals, aquests tours ofereixen un viatge autèntic al cor del patrimoni africà.",
+
+  "ecoToursTitle": "Tours Ecològics i Sostenibles",
+  "ecoToursDesc": "Participa en tours respectuosos amb el medi ambient, aprèn sobre els esforços locals de conservació i dona suport a comunitats que depenen de recursos sostenibles.",
+
+  "adventureToursTitle": "Esports d'Aventura i Expedicions",
+  "adventureToursDesc": "Explora el terreny abrupte de l'Àfrica i desafia els teus límits. Des d'escalar muntanyes i fer ràfting fins a paracaigudisme i dunes, oferim experiències per a tots els amants de l'adrenalina.",
+
+  "specialInterestTitle": "Tours d'Interès Especial",
+  "specialInterestDesc": "Elaborem itineraris personalitzats per a les teves passions. Sigui fotografia, observació d'ocells, gastronomia o història, els nostres guies experts són aquí per a tu.",
+
+  "wellnessTitle": "Benestar i Retirs",
+  "wellnessDesc": "Reconnecta amb la teva ment, cos i esperit. Els nostres paquets ofereixen relaxació i rejoveniment, amb sessions de ioga, meditació, tractaments de spa i teràpies holístiques.",
+
+  "luxuryTitle": "Viatges de Luxe",
+  "luxuryDesc": "Viu l'Àfrica amb un estil i comoditat incomparables amb paquets exclusius. Allotja't en lodges opulents, resorts privats o viles, amb gastronomia gurmet i paisatges únics.",
+  "destinationTitle": "Kènia",
+  "destinationDesc": "Des de les sabanes del Maasai Mara fins a les aigües cristal·lines de l’Oceà Índic, Kènia ofereix un viatge inoblidable de descobriment.",
+
+  "nairobiTitle": "Excursió d’un dia per la ciutat de Nairobi",
+  "nairobiDesc": "Des de mercats bulliciosos fins a aventures amb fauna salvatge, explora l’única ciutat amb un parc nacional, on l’energia urbana es troba amb la bellesa natural.",
+
+  "maraTitle": "Reserva Nacional Maasai Mara",
+  "maraDesc": "Sigues testimoni de la sorprenent Gran Migració, un espectacle impressionant del drama de la natura en paisatges espectaculars i fauna icònica.",
+
+  "nakuruTitle": "Parc Nacional del Llac Nakuru",
+  "nakuruDesc": "Meravella’t amb la bellesa del Llac Nakuru, llar de flamencs, rinoceronts i una fauna diversa en un entorn serè i espectacular.",
+
+  "tsavoTitle": "Parcs Nacionals Tsavo",
+  "tsavoDesc": "Des de la plana de Yatta fins a les fonts de Mzima, explora el parc més gran de Kènia on els elefants coberts de pols vermella passegen lliurement.",
+
+  "mountKenyaTitle": "Mont Kènia",
+  "mountKenyaDesc": "Ascendeix al segon cim més alt d’Àfrica amb paisatges alpins, llacs glacials i flora única com les lobèlies gegants.",
+
+  "dianiTitle": "Platja Diani",
+  "dianiDesc": "Submergeix els peus a les sorres blanques, fes snorkel en esculls vibrants o gaudeix d’esports aquàtics emocionants a la famosa costa de Kènia.",
+
+  "aberdareTitle": "Parc Nacional Aberdare",
+  "aberdareDesc": "Un paradís per als amants de la natura amb safaris, rutes de senderisme i allotjaments en cabanes als arbres amb vistes als abeuradors d’animals.",
+
+  "naivashaTitle": "Llac Naivasha",
+  "naivashaDesc": "Gaudeix de tranquils passeigs en barca entre hipopòtams i ocells, o relaxa’t amb vistes al Gran Rift a l’Llac Naivasha.",
+  "tanzaTitle": "Tanzània",
+  "tanzaDesc": "Des de la Gran Migració del Serengeti fins a les tranquil·les platges de Zanzíbar, Tanzània ofereix una experiència de safari tan àmplia com inoblidable.",
+  "tanzaniaExperiencesTitle": "Millors experiències a Tanzània",
+  "tanzaniaExperiencesDesc": "Explora les destinacions imprescindibles i els aspectes culturals més destacats de Tanzània",
+
+  "serengetiTitle": "Gran Migració del Serengeti",
+  "serengetiDesc": "Segueix els cops de cascos de més d’un milió de nyus mentre travessen rius plens de cocodrils i planes plenes de depredadors.",
+
+  "zanzibarTitle": "Escapada a la platja de Zanzíbar",
+  "zanzibarDesc": "Relaxeu-vos a les platges de sorra blanca, feu snorkel en aigües turqueses i exploreu els carrerons perfumats d’espècies de la històrica Stone Town.",
+
+  "tarangireTitle": "Safari al Parc Nacional Tarangire",
+  "tarangireDesc": "Camineu sota antics baobabs i observeu enormes ramats d’elefants en un dels santuaris de fauna més infravalorats de Tanzània.",
+
+  "manyaraTitle": "Safari al Llac Manyara",
+  "manyaraDesc": "Descobriu lleons que pugen als arbres, bandades de flamencs i boscos plens d’ocells en un perfecte safari d’un dia.",
+
+  "maasaiTitle": "Visita cultural a un poble Massai",
+  "maasaiDesc": "Endinseu-vos en les vibrants tradicions dels Massai: balleu, connecteu i apreneu d’una de les comunitats més icòniques de l’Àfrica Oriental.",
+
+  "ngorongoroTitle": "Safari al Cràter del Ngorongoro",
+  "ngorongoroDesc": "Descendiu a una antiga caldera volcànica plena de fauna salvatge, inclosos rinoceronts, lleons i grans llacs habitats per hipopòtams.",
+
+  "ndutuTitle": "Safari de cria a Ndutu",
+  "ndutuDesc": "Viu l’acció a Ndutu durant la temporada de parts de nyus (gen–mar), amb escenes increïbles de depredadors i preses i vida nova a les planes.",
+
+  "flyinTitle": "Aventura amb avió al Serengeti",
+  "flyinDesc": "Aprofiteu al màxim el vostre safari volant directament al Serengeti: campaments de luxe, vistes impressionants i recorreguts inoblidables us esperen.",
+
+  "kilimanjaroTitle": "Ascens al Mont Kilimanjaro",
+  "kilimanjaroDesc": "Admireu el cim més alt de l’Àfrica: camineu per les seves vessants boscoses o exploreu la cultura chagga a la seva majestuosa base.",
+  "ugandTitle": "UGANDA",
+  "ugandDesc": "Rastreja goril·les de muntanya a través de boscos plujosos emboirats i descobreix la bellesa salvatge d’Uganda, on la selva es troba amb la sabana.",
+
+  "bwindiTitle": "Bosc Impenetrable de Bwindi",
+  "bwindiDesc": "La joia d’Uganda per a les trobades amb primats. Enfronta’t cara a cara amb els rars goril·les de muntanya en un dels boscos més màgics de la Terra.",
+
+  "murchisonTitle": "Cataractes Murchison",
+  "murchisonDesc": "Llar de les atronadores cascades del Nil, safaris dels Cinc Grans i passejades amb vaixell plenes d’hipopòtams i cocodrils.",
+
+  "batwaTitle": "Experiències Culturals Batwa",
+  "batwaDesc": "Descobreix les tradicions dels pigmeus Batwa, els primers habitants d’Uganda, guardians dels secrets de Bwindi.",
+
+  "queenElizabethTitle": "Parc Nacional Queen Elizabeth & Llac Mburo & Safari al Llac Bunyonyi",
+  "queenElizabethDesc": "Famos per lleons que pugen als arbres, llacs de cràter volcànic i el canal Kazinga, ric en fauna salvatge.",
+
+  "kampalaTitle": "Tour Cultural per la Ciutat de Kampala",
+  "kampalaDesc": "Submergeix-te a la capital d’Uganda amb visites al Museu d’Uganda, tombes reials, mercats i vibrants escenes culinàries locals.",
+
+  "kidepoTitle": "Parc Nacional de la Vall de Kidepo",
+  "kidepoDesc": "Remot i salvatge—llar de lleons, estruços i paisatges dramàtics rarament vistos pel turisme massiu.",
+
+  "kibaleTitle": "Parc Nacional de Kibale",
+  "kibaleDesc": "La “Capital Mundial dels Primats”—millor conegut pel rastreig de ximpanzés i la biodiversitat del bosc plujós.",
+
+  "mburoTitle": "Parc Nacional del Llac Mburo",
+  "mburoDesc": "Un parc compacte ideal per a safaris a peu, ciclisme i veure zebres, girafes i hipopòtams de prop.",
+
+  "bunyonyiTitle": "Llac Bunyonyi",
+  "bunyonyiDesc": "Un llac increïblement pintoresc amb 29 illes—perfecte per relaxar-se, remar en canoa i interactuar culturalment després de rastrejar goril·les.",
+  "contactTitle": "CONTACTA'NS",
+  "getInTouch": "Posa't en contacte",
+  "contactSubtitle": "Al nostre equip li encantaria saber de tu.",
+  "formName": "Nom",
+  "formEmail": "Correu electrònic",
+  "formPhone": "Telèfon",
+  "formSubject": "Assumpte",
+  "formMessage": "Missatge",
+  "placeholderName": "El teu nom",
+  "placeholderEmail": "nom@gmail.com",
+  "placeholderPhone": "El teu número de telèfon",
+  "placeholderSubject": "Assumpte",
+  "placeholderMessage": "Explica'ns més...",
+  "sending": "Enviant...",
+  "sendMessage": "Enviar missatge",
+  "contactSuccess": "Missatge enviat amb èxit!",
+  "conversationTitle": "Comencem la conversa",
+  "conversationDesc": "Som aquí per respondre preguntes, explorar idees o iniciar el teu pròxim gran projecte.",
+  "kenyaOffice": "Oficina de Kenya",
+  "barcelonaOffice": "Oficina de Barcelona",
+  "safari": {
+    "heroTitle": "Guia per a principiants per triar l’experiència de safari perfecta",
+    "heroSubtitle": "De somnis infantils a aventures que canvien la vida",
+    "intro1": "Encara recordo la primera vegada que vaig decidir que aniria a un safari. No va ser una decisió pràctica. Va ser un somni, un que havia estat esperant silenciosament al fons de la meva ment des que era nen, fullejant revistes de viatges brillants i veient lleons banyats amb llum daurada, elefants marxant per planes polsoses i cels tan amplis que semblaven estendre’s per sempre.",
+    "intro2": "Però aquí hi ha la veritat que ningú t’explica: la idea de reservar un safari pot semblar aclaparadora al principi. Hi ha opcions infinites: parcs nacionals, reserves privades, safaris amb cotxe, safaris a peu, lodges de luxe, campaments rústics. Per on comences a triar?",
+    "intro3": "Aquesta és la història de com vaig trobar el meu safari perfecte, i espero que també t’ajudi a trobar el teu.",
+
+    "step1": {
+      "title": "Trobar el per què darrere del viatge",
+      "content": [
+        "Abans fins i tot d’obrir el portàtil per buscar paquets de safari, em vaig preguntar: Per què vull fer això?",
+        "Era per presenciar la Gran Migració? Per fotografiar els Cinc Grans? Per desconnectar del soroll de la vida i submergir-me en el ritme tranquil de la natura?",
+        "Per a mi, eren les tres coses, però conèixer el teu 'per què' reduirà les opcions més ràpid del que penses."
+      ]
+    },
+
+    "step2": {
+      "title": "Triar el tipus de safari que s’adapta al teu estil",
+      "content": [
+        "Vaig aprendre ràpidament que els safaris no són iguals per a tothom.",
+        "Alguns viatgers estimen el romanticisme dels campaments sota les estrelles, on la nit està viva amb el so de les hienes a la distància. Altres busquen el luxe dels lodges amb piscines infinites i sopars de cuina exquisida.",
+        "Vaig provar tots dos, i encara que el lodge em va mimar amb llits tous i còctels al capvespre, va ser el campament el que em va fer sentir realment part de la natura salvatge.",
+        "I després hi ha l’estil del safari en si mateix: safaris amb cotxe per a l’experiència clàssica, safaris a peu per sentir la terra sota els teus peus, i safaris aquàtics navegant entre hipopòtams i ocells."
+      ]
+    },
+
+    "step3": {
+      "title": "El moment ho és tot",
+      "content": [
+        "Gairebé vaig reservar a l’abril.",
+        "Aleshores un guia em va dir suaument: 'Potser voldries replantejar-t’ho.' Resulta que el moment és tan important com la ubicació.",
+        "Les estacions seques sovint signifiquen que és més fàcil veure animals, ja que es reuneixen a prop de fonts d’aigua. Les estacions humides pinten el paisatge de verd i porten cries al món, però a vegades dificulten els viatges fora de carretera.",
+        "La màgia és que no hi ha un 'mal' moment. Només el moment adequat per a l’experiència que vols."
+      ]
+    },
+
+    "step4": {
+      "title": "Confiar en els guies",
+      "content": [
+        "En el meu primer safari amb cotxe, vaig seure en silenci, agafant la càmera i escanejant l’horitzó a la recerca de qualsevol senyal de moviment. El meu guia, un home que semblava parlar l’idioma del vent, de sobte va aturar el vehicle.",
+        "Minuts després, un lleopard va aparèixer de l’herba alta, movent-se amb la gràcia d’un xiuxiueig.",
+        "Aquell moment em va ensenyar que triar el guia adequat és tan important com triar la destinació correcta. Són narradors, protectors i navegants del món salvatge: el pont entre tu i el safari dels teus somnis."
+      ]
+    },
+
+    "step5": {
+      "title": "Gaudint dels moments intermedis",
+      "content": [
+        "Sí, les trobades amb la fauna et deixaran sense alè, però els moments tranquils entremig podrien ser el que recordis més.",
+        "La manera com l’aire fa una olor diferent a l’alba.",
+        "L’escalfor del te a les teves mans quan la primera llum toca les planes.",
+        "Com els desconeguts al voltant d’una foguera es converteixen en amics al final de la nit.",
+        "Un safari no és només el que veus; és com et fa sentir."
+      ]
+    },
+
+    "yourTurn": {
+      "title": "El teu torn per començar",
+      "p1": "Si estàs llegint això i el teu cor ja és a mig camí cap a l’Àfrica, pren-ho com un senyal. El teu safari perfecte t’espera, un que coincideixi amb el teu estil, el teu ritme i els teus somnis.",
+      "p2": "Comença pel teu 'per què', tria el tipus d’aventura que se senti adequada per a tu i confia en el viatge. Perquè un cop estiguis a les planes obertes i sentis la terra vibrar sota els teus peus, entendràs per què un safari mai és només un viatge.",
+      "p3": "És una història d’amor entre tu i la natura salvatge."
+    },
+
+    "finalThoughts": {
+      "title": "Reflexions finals",
+      "p1": "El teu primer safari és l’inici d’una història d’amor de per vida amb l’Àfrica. Tant si somies amb seguir lleons per les planes infinites de Tanzània, lliscar pels canals de Botswana, o mirar als ulls d’un goril·la a Ruanda, la planificació adequada el farà inoblidable.",
+      "p2": "Triar el teu primer safari és equilibrar els teus somnis, el pressupost i el nivell de comoditat."
+    },
+
+    "cta": {
+      "title": "Preparat per començar a planificar el teu safari somiat?",
+      "desc": "Contacta’ns avui i adaptarem una aventura tan única com tu.",
+      "button": "Comença el teu viatge de safari"
+    }
+  },
+  "safari1": {
+    "heroTitle": "Els 10 destins de fauna salvatge imprescindibles a l’Àfrica",
+    "heroSubtitle": "Des de la gran migració del Serengeti fins al trekking de goril·les a Ruanda. La teva llista definitiva de safari t’espera.",
+    "intro": "L’Àfrica no és només un continent, és un paradís de fauna salvatge. Des de sabanes daurades plenes de lleons fins a selves tropicals que ressonen amb els crits dels goril·les, aquí és on la natura encara corre lliure. Si ets un entusiasta de la fauna salvatge que busca la seva pròxima aventura, aquí tens 10 destins que mereixen un lloc a la teva llista de somnis.",
+
+    "destinations": [
+      { "title": "Parc Nacional del Serengeti, Tanzània", "description": "El Serengeti és l’escenari d’un dels majors espectacles de la natura, la Gran Migració. Més de dos milions de nyus, zebres i gaseles creuen les planes, amb depredadors a prop. Visita entre juny i setembre per veure els creuaments de rius o entre gener i febrer per la temporada de parts." },
+      { "title": "Reserva Nacional Maasai Mara, Kenya", "description": "Una extensió de l’ecosistema del Serengeti, el Mara és famós pels seus avistaments de grans felins: lleons, lleopards i guepards. La migració anual també passa per aquí, convertint-lo en un paradís per als fotògrafs." },
+      { "title": "Delta de l’Okavango, Botswana", "description": "Aquest lloc declarat Patrimoni de la Humanitat per la UNESCO és un delta interior exuberant que atrau elefants, hipopòtams i centenars d’espècies d’ocells. Els safaris en mokoro (canoa tradicional) ofereixen una manera íntima d’explorar els seus canals." },
+      { "title": "Parc Nacional Kruger, Sud-àfrica", "description": "Un dels parcs més accessibles d’Àfrica, Kruger és perfecte per als que fan un safari per primera vegada. Llar dels Cinc Grans, també ofereix opcions d’autoconducció i una varietat d’allotjaments per a tots els pressupostos." },
+      { "title": "Parc Nacional Etosha, Namíbia", "description": "Conegut pels seus paisatges de planes salines i postes de sol dramàtiques, Etosha atrau ramats d’elefants, girafes i rinoceronts negres als seus abeuradors, ideals per observar animals." },
+      { "title": "Parc Nacional Chobe, Botswana", "description": "Si estimes els elefants, aquest és el teu paradís. Chobe té una de les majors poblacions d’elefants del món, millor observada en un creuer al capvespre pel riu Chobe." },
+      { "title": "Parc Nacional Impenetrable de Bwindi, Uganda", "description": "Endinsa’t en una jungla boirosa per trobar els goril·les de muntanya que encara queden al món. El trekking aquí és desafiant però ofereix una experiència única a la vida." },
+      { "title": "Parc Nacional dels Volcans, Ruanda", "description": "Un altre santuari per al trekking de goril·les, Ruanda també ofereix el seguiment de micos daurats i vistes impressionants de les muntanyes Virunga." },
+      { "title": "Cràter del Ngorongoro, Tanzània", "description": "Sovint anomenat \"El Jardí de l’Edèn d’Àfrica\", aquesta caldera volcànica acull una increïble densitat de fauna salvatge, inclosos rinoceronts negres rars." },
+      { "title": "Parc Nacional South Luangwa, Zàmbia", "description": "El lloc de naixement del safari a peu, South Luangwa ofereix trobades properes amb elefants, lleopards i gossos salvatges, sense el brunzit d’un motor de vehicle." }
+    ],
+
+    "tipsTitle": "Consells per planificar la teva aventura de fauna salvatge africana",
+    "tipsSubtitle": "Consells essencials per fer realitat els teus somnis de safari",
+    "tips": [
+      { "title": "Millor època per visitar", "description": "L’estació seca (varia segons la regió) facilita l’observació d’animals." },
+      { "title": "Reserva amb antelació", "description": "Especialment per a permisos de goril·les i allotjaments en temporada de migració." },
+      { "title": "Empaqueta amb intel·ligència", "description": "Roba de colors neutres, bons prismàtics i una càmera de qualitat." },
+      { "title": "Considera visites guiades", "description": "Els guies locals milloren els avistaments i garanteixen la seguretat." }
+    ],
+
+    "finalWordTitle": "Paraula final",
+    "finalWordText": "Tant si persegueixes l’emoció de la migració, la tranquil·litat d’un passeig en mokoro o l’emoció de mirar als ulls d’un goril·la, l’Àfrica ofereix trobades amb la fauna salvatge que mai oblidaràs.",
+    "cta": {
+      "highlight": "📌 Planifica el teu safari somiat amb nosaltres",
+      "call": "Reserva la teva aventura africana amb Africkson Safaris avui mateix!"
+    }
+  },
+  "safari2": {
+    "heroTitle": "Millor època per visitar l'Àfrica",
+    "heroSubtitle": "per a un safari",
+    "heroTagline": "El moment ho és tot per viure el pols salvatge de l'Àfrica",
+
+    "story1": "La primera vegada que vaig aterrar a l'Àfrica per fer un safari, pensava que ho tenia tot planejat. La maleta a punt, la càmera preparada i el cap ple de somnis a l'estil National Geographic. Però el segon dia, el meu guia, en Moses, es va inclinar i va dir amb un somriure murri,",
+    "storyQuote": "\"Has vingut en el moment adequat. L'arbust avui et parla.\"",
+    "story2": "Va ser aleshores quan vaig aprendre que, a l'Àfrica, el temps ho és tot.",
+
+    "whyTitle": "Per què el moment pot fer o desfer el teu safari",
+    "why1": "Imagina arribar al Serengeti just després que hagi passat la Gran Migració. La sabana continua sent impressionant, però els grans ramats amb què somiaves… ja són lluny, a centenars de quilòmetres.",
+    "why2": "O imagina visitar el Parc Nacional de Chobe en plena estació seca, quan centenars d'elefants es reuneixen a la riba del riu. No voldries perdre-t'ho per unes setmanes.",
+    "whyHighlight": "La fauna africana segueix el ritme de la natura: pluges, sequeres, migracions i temporades de cria. Per veure el continent en el seu estat més salvatge, cal sincronitzar la visita amb el seu batec natural.",
+
+    "seasonsTitle": "Les estacions de la natura salvatge",
+    "seasonsQuote": "En Moses em va dir un cop: \"L'arbust és un llibre obert. Si véns en el moment adequat, en comprendràs la història.\"",
+    "seasonsIntro": "Així es despleguen els capítols:",
+    "seasons": [
+      {
+        "title": "Estació seca",
+        "subtitle": "(juny a octubre)",
+        "description": "Matins frescos, prats daurats i animals agrupats als abeuradors. És el millor moment per veure els Cinc Grans i molt més."
+      },
+      {
+        "title": "Estació de pluges",
+        "subtitle": "(novembre a maig)",
+        "description": "La sabana es vesteix de verd intens, les cries fan les primeres passes i l'avifauna és més espectacular que mai. La pluja pot enfangar els camins, però la màgia és innegable."
+      },
+      {
+        "title": "Moments de migració",
+        "subtitle": "",
+        "description": "Depenent d'on vagis, la Gran Migració dels nyus ofereix travessies dramàtiques, temporades de parts i acció de depredadors, cadascuna amb el seu propi espectacle."
+      }
+    ],
+
+    "chooseTitle": "Triar el moment adequat per a tu",
+    "choose1": "Alguns viatgers volen el drama d'un lleó perseguint un nyu. D'altres prefereixen la bellesa tranquil·la de veure un lleopard lliscar-se entre la boira a l'alba. El moment no és només per la fauna; és la història que vols viure.",
+    "chooseQuote": "Quan vaig tornar a casa d'aquell primer viatge, els amics em van preguntar quin va ser el meu moment preferit. Sense pensar-m'ho, vaig dir: \"El silenci just abans de la pluja: els elefants es van aturar, els ocells van callar i el vent va canviar. Semblava que tota la sabana contenia l'alè.\"",
+    "chooseHighlight": "Si hagués vingut en una altra època, potser mai hauria sentit aquell moment. I aquest és el secret: a l'Àfrica, el millor moment per visitar és quan la terra i les seves criatures et xiuxiuegen la història que més vols sentir.",
+
+    "ctaHighlight": "📍 Fem realitat els teus somnis de safari.",
+    "ctaText": "Explica'ns què tens a la llista de desitjos i crearem l'aventura africana perfecta per a tu. Contacta'ns avui mateix!"
+  }
+}

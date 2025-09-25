@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Loader2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Import assets
 import animal2 from "../assets/animal2.jpg";
@@ -31,6 +32,7 @@ import tanzania1 from "../assets/tanzania1.jpg";
 export default function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
 
   const slides = [
     animal2,
@@ -53,69 +55,15 @@ export default function Services() {
   ];
 
   const cards = [
-    {
-      id: 1,
-      title: "Car Hire",
-      img: cars,
-      desc: "Explore Africa at your own pace. Whether you need a rugged 4x4 for safari adventures, a comfortable sedan for city tours, or a spacious van for group travel we’ve got you covered.",
-      link: "/services/service1",
-    },
-    {
-      id: 2,
-      title: "Custom Tours",
-      img: park1,
-      desc: "Design your dream adventure and explore Africa your way, with every detail planned just for you to ensure your journey is as extraordinary as you envision.",
-      link: "/service-details/2",
-    },
-    {
-      id: 3,
-      title: "Group Safaris",
-      img: tanzania1,
-      desc: "Enjoy the camaraderie of exploring Africa’s iconic landscapes, abundant wildlife, and hidden gems with like-minded travelers on our expertly curated group safaris.",
-      link: "/service-details/3",
-    },
-    {
-      id: 4,
-      title: "Cultural & Heritage Tours",
-      img: maasai,
-      desc: "From visiting ancient archaeological sites and iconic landmarks to engaging with local communities, these tours offer an authentic journey into the heart of Africa’s heritage.",
-      link: "/service-details/4",
-    },
-    {
-      id: 5,
-      title: "Eco & Sustainable Tours",
-      img: eco,
-      desc: "Engage in eco-friendly tours, learn about local conservation efforts, and support communities that rely on sustainable resources.",
-      link: "/service-details/5",
-    },
-    {
-      id: 6,
-      title: "Adventure Sports & Expeditions",
-      img: boatracing,
-      desc: "Explore Africa’s rugged terrain and push your limits. From scaling mountains and white-water rafting to skydiving and dune bashing, we offer experiences for adrenaline seekers of all kinds.",
-      link: "/service-details/6",
-    },
-    {
-      id: 7,
-      title: "Special Interest Tours",
-      img: bird2,
-      desc: "We craft personalized itineraries to match your passions. Whether photography, birdwatching, culinary exploration, or history, our expert guides are here for you.",
-      link: "/service-details/7",
-    },
-    {
-      id: 8,
-      title: "Wellness & Retreats",
-      img: massage,
-      desc: "Reconnect with your mind, body, and spirit. Our packages offer relaxation and rejuvenation, featuring yoga sessions, meditation, spa treatments, and holistic therapies.",
-      link: "/service-details/8",
-    },
-    {
-      id: 9,
-      title: "Luxury Travel",
-      img: luxury,
-      desc: "Experience Africa in unparalleled style and comfort with bespoke packages. Stay in opulent lodges, exclusive resorts, or private villas, with gourmet dining and scenic escapes.",
-      link: "/service-details/9",
-    },
+    { id: 1, title: t("carHireTitle"), img: cars, desc: t("carHireDesc"), link: "/services/service1" },
+    { id: 2, title: t("customToursTitle"), img: park1, desc: t("customToursDesc"), link: "/service-details/2" },
+    { id: 3, title: t("groupSafarisTitle"), img: tanzania1, desc: t("groupSafarisDesc"), link: "/service-details/3" },
+    { id: 4, title: t("culturalToursTitle"), img: maasai, desc: t("culturalToursDesc"), link: "/service-details/4" },
+    { id: 5, title: t("ecoToursTitle"), img: eco, desc: t("ecoToursDesc"), link: "/service-details/5" },
+    { id: 6, title: t("adventureToursTitle"), img: boatracing, desc: t("adventureToursDesc"), link: "/service-details/6" },
+    { id: 7, title: t("specialInterestTitle"), img: bird2, desc: t("specialInterestDesc"), link: "/service-details/7" },
+    { id: 8, title: t("wellnessTitle"), img: massage, desc: t("wellnessDesc"), link: "/service-details/8" },
+    { id: 9, title: t("luxuryTitle"), img: luxury, desc: t("luxuryDesc"), link: "/service-details/9" }
   ];
 
   const handleNext = () => {
@@ -160,7 +108,7 @@ export default function Services() {
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <p className="text-xl md:text-4xl mt-4 font-bold">OUR SERVICES</p>
+          <p className="text-xl md:text-4xl mt-4 font-bold">{t("servicesTitle")}</p>
         </div>
 
         {/* Prev Button */}
@@ -210,11 +158,7 @@ export default function Services() {
 
       {/* Service Description */}
       <div className="text-lg text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full px-6">
-        <h1 className="max-w-4xl text-center">
-          With a team of our professional tour guides, drivers, and cook, we are
-          dedicated to providing you the best service and experience that
-          matches the money-value.
-        </h1>
+        <h1 className="max-w-4xl text-center">{t("servicesDesc")}</h1>
       </div>
 
       {/* Cards Section */}

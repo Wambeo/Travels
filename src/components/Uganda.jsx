@@ -1,75 +1,79 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ug1 from "../assets/ug1.jpg"
-import ug2 from "../assets/ug2.jpg"
-import ug3 from "../assets/ug3.jpg"
-import ug4 from "../assets/ug4.jpg"
-import ug5 from "../assets/ug5.jpg"
-import ug6 from "../assets/ug6.jpg"
-import ug7 from "../assets/ug7.jpg"
-import ug8 from "../assets/ug8.jpg"
-import ug9 from "../assets/ug9.jpg"
-import ug10 from "../assets/ug10.jpg"
+import { useTranslation } from "react-i18next";
 
+// ✅ Import assets
+import ug1 from "../assets/ug1.jpg";
+import ug2 from "../assets/ug2.jpg";
+import ug3 from "../assets/ug3.jpg";
+import ug4 from "../assets/ug4.jpg";
+import ug5 from "../assets/ug5.jpg";
+import ug6 from "../assets/ug6.jpg";
+import ug7 from "../assets/ug7.jpg";
+import ug8 from "../assets/ug8.jpg";
+import ug9 from "../assets/ug9.jpg";
+import ug10 from "../assets/ug10.jpg";
 
 export default function Uganda() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useTranslation();
 
   const slides = [ug1, ug2, ug3, ug4, ug1, ug5, ug6, ug7, ug8, ug9, ug10];
 
+  // ✅ Cards use translations
   const cards = [
     {
       img: ug1,
-      title: "Bwindi Impenetrable Forest",
-      desc: "Uganda’s crown jewel for primate encounters. Come face to face with the rare mountain gorillas in one of the most magical forests on Earth.",
+      title: t("bwindiTitle"),
+      desc: t("bwindiDesc"),
       link: "/destinations/nairobi",
     },
     {
       img: ug2,
-      title: "Murchison Falls",
-      desc: "Home to the thunderous falls on the Nile, Big Five game drives, and boat safaris teeming with hippos and crocs.",
+      title: t("murchisonTitle"),
+      desc: t("murchisonDesc"),
       link: "/service-details/2",
     },
     {
       img: ug3,
-      title: "Batwa Cultural Experiences",
-      desc: "Discover the traditions of the indigenous Batwa pygmies, the ancient forest life of Uganda’s first people, keepers of Bwindi’s secrets.",
+      title: t("batwaTitle"),
+      desc: t("batwaDesc"),
       link: "/service-details/2",
     },
     {
       img: ug4,
-      title: "Queen Elizabeth National Park & Lake Mburo & Lake Bunyonyi Safari",
-      desc: "Famous for tree-climbing lions, volcanic crater lakes, and the wildlife-rich Kazinga Channel.",
+      title: t("queenElizabethTitle"),
+      desc: t("queenElizabethDesc"),
       link: "/service-details/2",
     },
     {
       img: ug5,
-      title: "Kampala City Cultural Tour",
-      desc: "Dive into Uganda’s capital with visits to the Uganda Museum, royal tombs, markets, and vibrant local cuisine scenes.",
+      title: t("kampalaTitle"),
+      desc: t("kampalaDesc"),
       link: "/service-details/2",
     },
     {
       img: ug6,
-      title: "Kidepo Valley National Park",
-      desc: "Remote and wild—home to lions, ostriches, and dramatic landscapes rarely seen by mass tourism.",
+      title: t("kidepoTitle"),
+      desc: t("kidepoDesc"),
       link: "/service-details/2",
     },
     {
       img: ug7,
-      title: "Kibale National Park",
-      desc: "The “Primate Capital of the World”—best known for chimpanzee trekking and lush rainforest biodiversity.",
+      title: t("kibaleTitle"),
+      desc: t("kibaleDesc"),
       link: "/service-details/2",
     },
     {
       img: ug8,
-      title: "Lake Mburo National Park",
-      desc: "A compact park ideal for walking safaris, cycling, and seeing zebras, giraffes, and hippos up close.",
+      title: t("mburoTitle"),
+      desc: t("mburoDesc"),
       link: "/service-details/2",
     },
     {
       img: ug9,
-      title: "Lake Bunyonyi",
-      desc: "A breathtakingly scenic lake with 29 islands—perfect for relaxation, canoeing, and cultural interactions after gorilla trekking.",
+      title: t("bunyonyiTitle"),
+      desc: t("bunyonyiDesc"),
       link: "/service-details/2",
     },
   ];
@@ -84,7 +88,7 @@ export default function Uganda() {
 
   return (
     <div className="bg-orange-200 min-h-screen">
-      {/* Carousel */}
+      {/* ✅ Carousel */}
       <div className="relative w-full h-[80vh] overflow-hidden bg-orange-400 mb-16">
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-700"
@@ -96,14 +100,16 @@ export default function Uganda() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-        {/* Carousel Content */}
+        {/* ✅ Carousel Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <div className="text-center">
-            <p className="text-xl md:text-4xl mt-4">UGANDA</p>
+            <p className="text-xl md:text-4xl mt-4 font-bold">
+              {t("ugandTitle")}
+            </p>
           </div>
         </div>
 
-        {/* Previous Button */}
+        {/* Prev Button */}
         <button
           type="button"
           onClick={handlePrev}
@@ -150,21 +156,18 @@ export default function Uganda() {
         </button>
       </div>
 
-      {/* Service Description */}
+      {/* ✅ Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
-        <h1>
-          Track mountain gorillas through misty rainforests and discover
-          Uganda’s untamed beauty, where jungle meets savannah.
-        </h1>
+        <h1>{t("ugandDesc")}</h1>
       </div>
 
-      {/* Cards Section */}
+      {/* ✅ Cards Section */}
       <div className="flex justify-center items-center w-full mb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg shadow h-[450px]"
+              className="bg-white border border-gray-200 rounded-lg shadow h-[450px] hover:scale-105 hover:shadow-lg transition-transform duration-300"
             >
               <Link to={card.link}>
                 <img

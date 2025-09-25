@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Loader2, Phone } from "lucide-react";
-import contactus from "../assets/contactus.png"
-
+import { Loader2 } from "lucide-react";
+import contactus from "../assets/contactus.png";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -48,7 +49,7 @@ export default function Contact() {
           subject: "",
           message: "",
         });
-        alert("Message sent successfully!");
+        alert(t("contactSuccess"));
       })
       .catch((error) => {
         console.error("Error sending email: ", error);
@@ -60,28 +61,28 @@ export default function Contact() {
     <section className="w-full bg-orange-200 py-20">
       {/* Title */}
       <h1 className="text-5xl md:text-6xl font-extrabold text-[#0a0f1c] text-center mb-16">
-        CONTACT US
+        {t("contactTitle")}
       </h1>
 
       {/* Grid Layout */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
         {/* Left: Form */}
         <div className="bg-white shadow rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-[#0a0f1c]">Get in touch</h2>
-          <p className="text-gray-500 mt-1 mb-6">
-            Our friendly team would love to hear from you.
-          </p>
+          <h2 className="text-2xl font-bold text-[#0a0f1c]">{t("getInTouch")}</h2>
+          <p className="text-gray-500 mt-1 mb-6">{t("contactSubtitle")}</p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
             {/* Name */}
             <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
+              <label className="block text-sm font-medium mb-2">
+                {t("formName")}
+              </label>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Your name"
+                placeholder={t("placeholderName")}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
@@ -89,13 +90,15 @@ export default function Contact() {
 
             {/* Email */}
             <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
+              <label className="block text-sm font-medium mb-2">
+                {t("formEmail")}
+              </label>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="name@gmail.com"
+                placeholder={t("placeholderEmail")}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
@@ -103,13 +106,15 @@ export default function Contact() {
 
             {/* Phone */}
             <div>
-              <label className="block text-sm font-medium mb-2">Phone</label>
+              <label className="block text-sm font-medium mb-2">
+                {t("formPhone")}
+              </label>
               <input
                 type="tel"
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="Your phone number"
+                placeholder={t("placeholderPhone")}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
@@ -117,13 +122,15 @@ export default function Contact() {
 
             {/* Subject */}
             <div>
-              <label className="block text-sm font-medium mb-2">Subject</label>
+              <label className="block text-sm font-medium mb-2">
+                {t("formSubject")}
+              </label>
               <input
                 type="text"
                 name="subject"
                 value={form.subject}
                 onChange={handleChange}
-                placeholder="Subject"
+                placeholder={t("placeholderSubject")}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
               />
@@ -131,12 +138,14 @@ export default function Contact() {
 
             {/* Message */}
             <div>
-              <label className="block text-sm font-medium mb-2">Message</label>
+              <label className="block text-sm font-medium mb-2">
+                {t("formMessage")}
+              </label>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Tell us more..."
+                placeholder={t("placeholderMessage")}
                 rows="4"
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                 required
@@ -151,10 +160,10 @@ export default function Contact() {
               {loading ? (
                 <>
                   <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                  Sending...
+                  {t("sending")}
                 </>
               ) : (
-                "Send message"
+                t("sendMessage")
               )}
             </button>
           </form>
@@ -173,19 +182,16 @@ export default function Contact() {
 
           {/* Text */}
           <h3 className="text-2xl font-bold text-[#0a0f1c]">
-            Let’s start the conversation
+            {t("conversationTitle")}
           </h3>
-          <p className="text-gray-500 mt-2 mb-8">
-            We’re here to answer questions, explore ideas, or kick off your next
-            big project.
-          </p>
+          <p className="text-gray-500 mt-2 mb-8">{t("conversationDesc")}</p>
 
           {/* Contact Cards */}
           <div className="grid gap-6">
             {/* Kenyan Office */}
             <div className="bg-white shadow rounded-2xl p-6">
               <h4 className="font-semibold text-[#0a0f1c] mb-2">
-                 Kenya Office
+                {t("kenyaOffice")}
               </h4>
               <p className="text-gray-500 text-sm">
                 Africkson Safaris <br />
@@ -204,7 +210,7 @@ export default function Contact() {
             {/* Spanish Office */}
             <div className="bg-white shadow rounded-2xl p-6">
               <h4 className="font-semibold text-[#0a0f1c] mb-2">
-                 Barcelona Office
+                {t("barcelonaOffice")}
               </h4>
               <p className="text-gray-500 text-sm">
                 Casa Ametlla , Camí de Santa Rosa s/n 08680 Ametlla de Casserres (Barcelona)

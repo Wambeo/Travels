@@ -1,0 +1,360 @@
+{
+  "home": "Home",
+  "destinations": "Destinations",
+  "blog": "Blog",
+  "services": "Services",
+  "contact": "Contact",
+
+  "about": "About",
+  "contactUs": "Contact Us",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfService": "Terms of Service",
+  "contactHeader": "Contact us",
+  "location": "Nairobi, Kenya",
+  "newsletter": "Subscribe to our Newsletter",
+  "subscribe": "Subscribe",
+  "heroTitle": "Africkson Safaris",
+  "heroSubtitle": "A Home Away From Home",
+  "bookNow": "Book Now",
+  "popularDestinations": "Popular Destinations",
+
+  "aboutTitle": "About",
+  "about1": "Founded in 2018, Africkson Safaris had a vision to share the vibrant essence of Africa with the rest of the world. Our passion is rooted in creating meaningful connections by welcoming you into our cultures with warmth and authenticity, ensuring you feel at home, a home away from home.",
+  "about2": "Our tours are more than just adventures; they are opportunities to immerse yourself in Africa's rich culture. We will indulge you in the traditions and stories of our communities, savor the flavors of local cuisine, and discover Africa through the eyes of its people. As you journey with us, you'll also explore the continent's landscapes, from breathtaking wildlife safaris to caves, forests, the Great Migration, and so much more.",
+  "about3": "Our goal is to ensure your experience is unforgettable, heartfelt, and filled with wonder, where every moment tells a story, and every journey feels like coming home.",
+
+  
+  "seeMore": "See More",
+
+  "tanzaniaTitle": "Tanzania Safaris",
+  "tanzaniaDesc": "Experience the Great Migration across the Serengeti, marvel at the endless savannahs, and enjoy breathtaking views of Mount Kilimanjaro.",
+  "ugandaTitle": "Uganda Safaris",
+  "ugandaDesc": "Track endangered mountain gorillas in their natural habitat, cruise along the Nile, and explore lush tropical rainforests.",
+  "kenyaTitle": "Kenya Safaris",
+  "kenyaDesc": "From the world-famous Masai Mara and its abundant wildlife to the stunning coastal beaches, Kenya offers a perfect blend of adventure and relaxation.",
+
+  "blog1": "Top 10 Must-See Destinations in Africa",
+  "blog2": "A Beginner's Guide to Planning Your First Safari",
+  "blog3": "The Big Five and Beyond: Discovering the Wildlife of East Africa",
+
+  "rights": "© 2023 Africkson™. All Rights Reserved.",
+   "servicesTitle": "OUR SERVICES",
+  "servicesDesc": "With a team of our professional tour guides, drivers, and cook, we are dedicated to providing you the best service and experience that matches the money-value.",
+
+  "carHireTitle": "Car Hire",
+  "carHireDesc": "Explore Africa at your own pace. Whether you need a rugged 4x4 for safari adventures, a comfortable sedan for city tours, or a spacious van for group travel we’ve got you covered.",
+
+  "customToursTitle": "Custom Tours",
+  "customToursDesc": "Design your dream adventure and explore Africa your way, with every detail planned just for you to ensure your journey is as extraordinary as you envision.",
+
+  "groupSafarisTitle": "Group Safaris",
+  "groupSafarisDesc": "Enjoy the camaraderie of exploring Africa’s iconic landscapes, abundant wildlife, and hidden gems with like-minded travelers on our expertly curated group safaris.",
+
+  "culturalToursTitle": "Cultural & Heritage Tours",
+  "culturalToursDesc": "From visiting ancient archaeological sites and iconic landmarks to engaging with local communities, these tours offer an authentic journey into the heart of Africa’s heritage.",
+
+  "ecoToursTitle": "Eco & Sustainable Tours",
+  "ecoToursDesc": "Engage in eco-friendly tours, learn about local conservation efforts, and support communities that rely on sustainable resources.",
+
+  "adventureToursTitle": "Adventure Sports & Expeditions",
+  "adventureToursDesc": "Explore Africa’s rugged terrain and push your limits. From scaling mountains and white-water rafting to skydiving and dune bashing, we offer experiences for adrenaline seekers of all kinds.",
+
+  "specialInterestTitle": "Special Interest Tours",
+  "specialInterestDesc": "We craft personalized itineraries to match your passions. Whether photography, birdwatching, culinary exploration, or history, our expert guides are here for you.",
+
+  "wellnessTitle": "Wellness & Retreats",
+  "wellnessDesc": "Reconnect with your mind, body, and spirit. Our packages offer relaxation and rejuvenation, featuring yoga sessions, meditation, spa treatments, and holistic therapies.",
+
+  "luxuryTitle": "Luxury Travel",
+  "luxuryDesc": "Experience Africa in unparalleled style and comfort with bespoke packages. Stay in opulent lodges, exclusive resorts, or private villas, with gourmet dining and scenic escapes.",
+  "destinationTitle": "Kenya",
+  "destinationDesc": "From the savannas of the Maasai Mara to the sparkling waters of the Indian Ocean, Kenya offers an unforgettable journey of discovery.",
+
+  "nairobiTitle": "Nairobi City Day Trip",
+  "nairobiDesc": "From bustling markets to wildlife adventures, explore the only city with a national park, where urban energy meets natural beauty.",
+
+  "maraTitle": "Maasai Mara National Reserve",
+  "maraDesc": "Witness the awe-inspiring Great Migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife.",
+
+  "nakuruTitle": "Lake Nakuru National Park",
+  "nakuruDesc": "Marvel at the beauty of Lake Nakuru, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.",
+
+  "tsavoTitle": "Tsavo National Parks",
+  "tsavoDesc": "From the Yatta Plateau to Mzima Springs, explore Kenya’s largest park where red-dusted elephants roam freely.",
+
+  "mountKenyaTitle": "Mount Kenya",
+  "mountKenyaDesc": "Ascend Africa’s second-highest peak with alpine landscapes, glacial lakes, and unique flora like giant lobelias.",
+
+  "dianiTitle": "Diani Beach",
+  "dianiDesc": "Sink your toes into white sands, snorkel vibrant reefs, or enjoy thrilling water sports on Kenya’s famous coast.",
+
+  "aberdareTitle": "Aberdare National Park",
+  "aberdareDesc": "A haven for nature lovers with game drives, hiking trails, and tree-top lodges overlooking wildlife at watering holes.",
+
+  "naivashaTitle": "Lake Naivasha",
+  "naivashaDesc": "Enjoy peaceful boat rides among hippos and birds, or relax with views of the Great Rift Valley at Lake Naivasha.",
+  "tanzaTitle": "Tanzania",
+  "tanzaDesc": "From the Serengeti’s Great Migration to the tranquil beaches of Zanzibar, Tanzania offers a safari experience as vast as it is unforgettable.",
+  "tanzaniaExperiencesTitle": "Top Experiences in Tanzania",
+  "tanzaniaExperiencesDesc": "Explore the must-see destinations and cultural highlights of Tanzania",
+
+  "serengetiTitle": "Serengeti Great Migration",
+  "serengetiDesc": "Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.",
+
+  "zanzibarTitle": "Zanzibar Beach Escape",
+  "zanzibarDesc": "Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.",
+
+  "tarangireTitle": "Tarangire National Park Safari",
+  "tarangireDesc": "Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.",
+
+  "manyaraTitle": "Lake Manyara Safari",
+  "manyaraDesc": "Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.",
+
+  "maasaiTitle": "Maasai Village Cultural Visit",
+  "maasaiDesc": "Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.",
+
+  "ngorongoroTitle": "Ngorongoro Crater Safari",
+  "ngorongoroDesc": "Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.",
+
+  "ndutuTitle": "Ndutu Calving Safari",
+  "ndutuDesc": "Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.",
+
+  "flyinTitle": "Fly-in Serengeti Adventure",
+  "flyinDesc": "Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.",
+
+  "kilimanjaroTitle": "Mount Kilimanjaro Trek",
+  "kilimanjaroDesc": "Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.",
+  "ugandTitle": "UGANDA",
+  "ugandDesc": "Track mountain gorillas through misty rainforests and discover Uganda’s untamed beauty, where jungle meets savannah.",
+
+  "bwindiTitle": "Bwindi Impenetrable Forest",
+  "bwindiDesc": "Uganda’s crown jewel for primate encounters. Come face to face with the rare mountain gorillas in one of the most magical forests on Earth.",
+
+  "murchisonTitle": "Murchison Falls",
+  "murchisonDesc": "Home to the thunderous falls on the Nile, Big Five game drives, and boat safaris teeming with hippos and crocs.",
+
+  "batwaTitle": "Batwa Cultural Experiences",
+  "batwaDesc": "Discover the traditions of the indigenous Batwa pygmies, the ancient forest life of Uganda’s first people, keepers of Bwindi’s secrets.",
+
+  "queenElizabethTitle": "Queen Elizabeth National Park & Lake Mburo & Lake Bunyonyi Safari",
+  "queenElizabethDesc": "Famous for tree-climbing lions, volcanic crater lakes, and the wildlife-rich Kazinga Channel.",
+
+  "kampalaTitle": "Kampala City Cultural Tour",
+  "kampalaDesc": "Dive into Uganda’s capital with visits to the Uganda Museum, royal tombs, markets, and vibrant local cuisine scenes.",
+
+  "kidepoTitle": "Kidepo Valley National Park",
+  "kidepoDesc": "Remote and wild—home to lions, ostriches, and dramatic landscapes rarely seen by mass tourism.",
+
+  "kibaleTitle": "Kibale National Park",
+  "kibaleDesc": "The “Primate Capital of the World”—best known for chimpanzee trekking and lush rainforest biodiversity.",
+
+  "mburoTitle": "Lake Mburo National Park",
+  "mburoDesc": "A compact park ideal for walking safaris, cycling, and seeing zebras, giraffes, and hippos up close.",
+
+  "bunyonyiTitle": "Lake Bunyonyi",
+  "bunyonyiDesc": "A breathtakingly scenic lake with 29 islands—perfect for relaxation, canoeing, and cultural interactions after gorilla trekking.",
+  "contactTitle": "CONTACT US",
+  "getInTouch": "Get in touch",
+  "contactSubtitle": "Our friendly team would love to hear from you.",
+  "formName": "Name",
+  "formEmail": "Email",
+  "formPhone": "Phone",
+  "formSubject": "Subject",
+  "formMessage": "Message",
+  "placeholderName": "Your name",
+  "placeholderEmail": "name@gmail.com",
+  "placeholderPhone": "Your phone number",
+  "placeholderSubject": "Subject",
+  "placeholderMessage": "Tell us more...",
+  "sending": "Sending...",
+  "sendMessage": "Send message",
+  "contactSuccess": "Message sent successfully!",
+  "conversationTitle": "Let’s start the conversation",
+  "conversationDesc": "We’re here to answer questions, explore ideas, or kick off your next big project.",
+  "kenyaOffice": "Kenya Office",
+  "barcelonaOffice": "Barcelona Office",
+
+  "safari": {
+    "heroTitle": "A Beginner's Guide to Choosing the Perfect Safari Experience",
+    "heroSubtitle": "From childhood dreams to life-changing adventures",
+    "intro1": "I still remember the first time I decided I was going on a safari. It wasn't a practical decision. It was a dream, one that had been sitting quietly in the back of my mind since I was a child, flipping through glossy travel magazines and seeing lions bathed in golden light, elephants marching across dusty plains, and skies so wide they seemed to stretch into forever.",
+    "intro2": "But here's the truth no one tells you: the idea of booking a safari can feel overwhelming at first. There are endless options; national parks, private reserves, game drives, walking safaris, luxury lodges, rustic camps. How do you even begin to choose?",
+    "intro3": "This is the story of how I found my perfect safari, and hopefully, it will help you find yours too.",
+
+    "step1": {
+      "title": "Finding the Why Behind the Trip",
+      "content": [
+        "Before I even opened my laptop to browse safari packages, I asked myself: Why do I want to do this?",
+        "Was it to witness the Great Migration? To photograph the Big Five? To disconnect from the noise of life and sink into nature's quiet rhythm?",
+        "For me, it was all three—but knowing your 'why' will narrow your choices faster than you think."
+      ]
+    },
+
+    "step2": {
+      "title": "Choosing the Type of Safari That Matches Your Style",
+      "content": [
+        "I learned quickly that safaris aren't one-size-fits-all.",
+        "Some travelers love the romance of tented camps under the stars, where the night is alive with the sound of hyenas in the distance. Others crave the indulgence of luxury lodges with infinity pools and fine dining.",
+        "I tried both, and while the lodge spoiled me with soft beds and sunset cocktails, it was the tented camp that made me feel like I was truly part of the wild.",
+        "Then there's the style of the safari itself: Game drives for the classic open-vehicle experience, walking safaris for feeling the earth under your boots, and water safaris drifting past hippos and birds."
+      ]
+    },
+
+    "step3": {
+      "title": "Timing Is Everything",
+      "content": [
+        "I almost booked in April.",
+        "Then a guide gently told me: 'You might want to rethink that.' Turns out, timing matters as much as location.",
+        "Dry seasons often mean easier wildlife spotting, as animals gather near waterholes. Wet seasons paint the landscapes green and bring newborn animals into the world—but sometimes make off-road travel trickier.",
+        "The magic is that there's no 'bad' time. There's just the right time for the experience you want."
+      ]
+    },
+
+    "step4": {
+      "title": "Trusting the Guides",
+      "content": [
+        "On my first game drive, I sat quietly, clutching my camera, scanning the horizon for any sign of movement. My guide, a man who seemed to speak the language of the wind, suddenly stopped the vehicle.",
+        "Minutes later, a leopard emerged from the tall grass, moving with the grace of a whisper.",
+        "That moment taught me that choosing the right guide is just as important as choosing the right destination. They are storytellers, protectors, and navigators of the wild—the bridge between you and the safari of your dreams."
+      ]
+    },
+
+    "step5": {
+      "title": "Savoring the In-Between Moments",
+      "content": [
+        "Yes, the wildlife encounters will steal your breath—but the quiet in-between moments might just be what you remember most.",
+        "The way the air smells different at sunrise.",
+        "The warmth of tea in your hands as the first light touches the plains.",
+        "The way strangers around a campfire become friends by the end of the night.",
+        "A safari isn't just about what you see; it's about how it makes you feel."
+      ]
+    },
+
+    "yourTurn": {
+      "title": "Your Turn to Begin",
+      "p1": "If you're reading this and your heart is already halfway to Africa, take it as a sign. Your perfect safari is waiting, one that matches your style, your pace, and your dreams.",
+      "p2": "Start with your 'why,' choose the kind of adventure that feels right for you, and trust the journey. Because once you've stood on the open plains and felt the earth hum beneath your feet, you'll understand why a safari is never just a trip.",
+      "p3": "It's a love story between you and the wild."
+    },
+
+    "finalThoughts": {
+      "title": "Final Thoughts",
+      "p1": "Your first safari is the start of a lifelong love affair with Africa. Whether you dream of tracking lions across Tanzania's endless plains, gliding through Botswana's waterways, or locking eyes with a gorilla in Rwanda, the right planning will make it unforgettable.",
+      "p2": "Choosing your first safari is about balancing your dreams, budget, and comfort level."
+    },
+
+    "cta": {
+      "title": "Ready to start planning your dream safari?",
+      "desc": "Contact us today and we'll tailor an adventure that's as unique as you are.",
+      "button": "Start Your Safari Journey"
+    }
+  },
+   "safari1": {
+    "heroTitle": "Top 10 Must-See Wildlife Destinations in Africa",
+    "heroSubtitle": "From the Serengeti's great migration to gorilla trekking in Rwanda. Your ultimate safari bucket list awaits.",
+    "intro": "Africa isn't just a continent, it's a wildlife wonderland. From golden savannahs teeming with lions to lush rainforests echoing with gorilla calls, this is where nature still roams free. If you're a wildlife enthusiast looking for your next adventure, here are 10 destinations that deserve a spot on your bucket list.",
+
+    "destinations": [
+      {
+        "title": "Serengeti National Park, Tanzania",
+        "description": "The Serengeti is the stage for one of nature's greatest spectacles, the Great Migration. Over two million wildebeest, zebra, and gazelle cross the plains, with predators close behind. Visit between June and September for river crossings or January–February for calving season."
+      },
+      {
+        "title": "Maasai Mara National Reserve, Kenya",
+        "description": "An extension of the Serengeti ecosystem, the Mara is famous for its big cat sightings; lions, leopards, and cheetahs. The annual migration also sweeps through here, making it a photographer's paradise."
+      },
+      {
+        "title": "Okavango Delta, Botswana",
+        "description": "This UNESCO World Heritage Site is a lush inland delta attracting elephants, hippos, and hundreds of bird species. Mokoro (dugout canoe) safaris offer an intimate way to explore its waterways."
+      },
+      {
+        "title": "Kruger National Park, South Africa",
+        "description": "One of Africa's most accessible parks, Kruger is perfect for first-time safari-goers. Home to the Big Five, it also offers self-drive options and a range of accommodations for every budget."
+      },
+      {
+        "title": "Etosha National Park, Namibia",
+        "description": "Known for its salt pan landscapes and dramatic sunsets, Etosha draws herds of elephants, giraffes, and black rhinos to its waterholes, prime for game viewing."
+      },
+      {
+        "title": "Chobe National Park, Botswana",
+        "description": "If you love elephants, this is your paradise. Chobe has one of the largest elephant populations in the world, best seen on a sunset boat cruise along the Chobe River."
+      },
+      {
+        "title": "Bwindi Impenetrable National Park, Uganda",
+        "description": "Step into a misty jungle to meet the world's remaining mountain gorillas. Trekking here is challenging but offers a once-in-a-lifetime wildlife encounter."
+      },
+      {
+        "title": "Volcanoes National Park, Rwanda",
+        "description": "Another gorilla trekking haven, Rwanda also offers golden monkey tracking and breathtaking views of the Virunga Mountains."
+      },
+      {
+        "title": "Ngorongoro Crater, Tanzania",
+        "description": "Often called \"Africa's Garden of Eden,\" this volcanic caldera shelters an incredible density of wildlife, including rare black rhinos."
+      },
+      {
+        "title": "South Luangwa National Park, Zambia",
+        "description": "The birthplace of the walking safari, South Luangwa offers up-close encounters with elephants, leopards, and wild dogs, without the hum of a vehicle engine."
+      }
+    ],
+
+    "tipsTitle": "Tips for Planning Your African Wildlife Adventure",
+    "tipsSubtitle": "Essential advice to make your safari dreams come true",
+    "tips": [
+      { "title": "Best Time to Visit", "description": "Dry season (varies by region) for easier game viewing." },
+      { "title": "Book Early", "description": "Especially for gorilla permits and migration season lodges." },
+      { "title": "Pack Smart", "description": "Neutral-colored clothing, good binoculars, and a quality camera." },
+      { "title": "Consider Guided Tours", "description": "Local guides enhance sightings and ensure safety." }
+    ],
+
+    "finalWordTitle": "Final Word",
+    "finalWordText": "Whether you're chasing the drama of the migration, the tranquility of a mokoro ride, or the thrill of locking eyes with a gorilla, Africa offers wildlife encounters you'll never forget.",
+    "cta": {
+      "highlight": "📌 Plan your dream safari with us",
+      "call": "Book Your African Adventure With Africkson Safaris Today!"
+    }
+  },
+  "safari2": {
+    "heroTitle": "Best Time to Visit Africa",
+    "heroSubtitle": "for a Safari",
+    "heroTagline": "Timing is everything when it comes to experiencing Africa's wild heartbeat",
+
+    "story1": "The first time I landed in Africa for a safari, I thought I had it all figured out. My bag was packed, camera ready, and my head full of National Geographic-style daydreams. But on the second day, my guide, Moses, leaned over and said with a sly smile,",
+    "storyQuote": "\"You came at the right time. The bush is speaking to you today.\"",
+    "story2": "That was the moment I learned: in Africa, timing is everything.",
+
+    "whyTitle": "Why Timing Can Make or Break Your Safari",
+    "why1": "Imagine arriving in the Serengeti just after the Great Migration had passed. The savannah is still breathtaking, but the massive herds you'd been dreaming of? Gone, hundreds of miles away.",
+    "why2": "Or picture visiting Chobe National Park in peak dry season, when elephants by the hundreds gather at the riverbank. You wouldn't want to miss that by a few weeks.",
+    "whyHighlight": "Africa's wildlife follows the rhythm of nature: rains, droughts, migrations, and breeding seasons. To see the continent at its wildest, you have to sync your visit with its natural heartbeat.",
+
+    "seasonsTitle": "The Seasons of the Wild",
+    "seasonsQuote": "Moses once told me, \"The bush is an open book. If you come at the right time, you'll understand the story.\"",
+    "seasonsIntro": "Here's how the chapters unfold:",
+    "seasons": [
+      {
+        "title": "Dry Season",
+        "subtitle": "(June to October)",
+        "description": "Crisp mornings, golden grasslands, and animals clustering around watering holes. This is your prime time for sightings—the Big Five and beyond."
+      },
+      {
+        "title": "Wet Season",
+        "subtitle": "(November to May)",
+        "description": "The bush comes alive in lush greens, newborn animals stumble through their first steps, and birdlife is at its most dazzling. The rains may make the roads muddy, but the magic is undeniable."
+      },
+      {
+        "title": "Migration Moments",
+        "subtitle": "",
+        "description": "Depending on where you go, the Great Wildebeest Migration offers dramatic crossings, calving seasons, and predator action—each with its own drama."
+      }
+    ],
+
+    "chooseTitle": "Choosing the Right Time for You",
+    "choose1": "Some travelers want the drama of a lion chasing wildebeest. Others prefer the quiet beauty of watching a leopard slip through the mist at dawn. Timing isn't just about wildlife; it's about the kind of story you want to live.",
+    "chooseQuote": "When I returned home from that first trip, my friends asked what my favorite moment was. Without thinking, I said, \"The stillness just before the rain—the elephants stopped, the birds hushed, and the wind changed. It felt like the entire savannah was holding its breath.\"",
+    "chooseHighlight": "If I'd come at a different time, I might never have felt that moment. And that's the secret: in Africa, the best time to visit is when the land and its creatures whisper the story you most want to hear.",
+
+    "ctaHighlight": "📍 Let's make your safari dreams a reality.",
+    "ctaText": "Tell us what's on your bucket list, and we'll craft the perfect African adventure for you. Get in touch today!"
+  }
+
+}

@@ -1,83 +1,79 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import tz1 from "../assets/tz1.jpg"
-import tz2 from "../assets/tz2.jpg"
-import tz3 from "../assets/tz3.jpg"
-import tz4 from "../assets/tz4.jpg"
-import tz5 from "../assets/tz5.jpg"
-import tz6 from "../assets/tz6.jpg"
-import tz7 from "../assets/tz7.jpg"
-import tz8 from "../assets/tz8.jpg"
-import tz9 from "../assets/tz9.jpg"
-import tz10 from "../assets/tz10.jpg"
+import { useTranslation } from "react-i18next";
+
+// ✅ Import assets
+import tz1 from "../assets/tz1.jpg";
+import tz2 from "../assets/tz2.jpg";
+import tz3 from "../assets/tz3.jpg";
+import tz4 from "../assets/tz4.jpg";
+import tz5 from "../assets/tz5.jpg";
+import tz6 from "../assets/tz6.jpg";
+import tz7 from "../assets/tz7.jpg";
+import tz8 from "../assets/tz8.jpg";
+import tz9 from "../assets/tz9.jpg";
+import tz10 from "../assets/tz10.jpg";
 
 export default function Tanzania() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useTranslation();
 
   const slides = [tz1, tz2, tz3, tz4, tz5, tz6, tz7, tz8, tz9, tz10];
 
+  // ✅ Cards use translation keys
   const cards = [
     {
       img: tz7,
-      title: "Serengeti Great Migration",
-      description:
-        "Follow the thundering hooves of over a million wildebeest as they cross crocodile-filled rivers and predator-packed plains.",
+      title: t("serengetiTitle"),
+      description: t("serengetiDesc"),
       link: "/destinations/nairobi",
     },
     {
       img: tz3,
-      title: "Zanzibar Beach Escape",
-      description:
-        "Unwind on white-sand beaches, snorkel in turquoise waters, and explore the spice-scented alleyways of historic Stone Town.",
+      title: t("zanzibarTitle"),
+      description: t("zanzibarDesc"),
       link: "/service-details/2",
     },
     {
       img: tz4,
-      title: "Tarangire National Park Safari",
-      description:
-        "Walk beneath ancient baobab trees and spot massive elephant herds in one of Tanzania’s most underrated wildlife havens.",
+      title: t("tarangireTitle"),
+      description: t("tarangireDesc"),
       link: "/service-details/2",
     },
     {
       img: tz5,
-      title: "Lake Manyara Safari",
-      description:
-        "Discover tree-climbing lions, flocks of flamingos, and lush forests teeming with birdlife on a perfect day safari.",
+      title: t("manyaraTitle"),
+      description: t("manyaraDesc"),
       link: "/service-details/2",
     },
     {
       img: tz6,
-      title: "Maasai Village Cultural Visit",
-      description:
-        "Step into the vibrant traditions of the Maasai—dance, connect, and learn from one of East Africa’s most iconic communities.",
+      title: t("maasaiTitle"),
+      description: t("maasaiDesc"),
       link: "/service-details/2",
     },
     {
       img: tz9,
-      title: "Ngorongoro Crater Safari",
-      description:
-        "Descend into an ancient volcanic caldera teeming with wildlife, including rhinos, lions, and massive hippo-filled lakes.",
+      title: t("ngorongoroTitle"),
+      description: t("ngorongoroDesc"),
       link: "/service-details/2",
     },
     {
       img: tz8,
-      title: "Ndutu Calving Safari",
-      description:
-        "Be at the heart of the action in Ndutu during wildebeest calving season (Jan–Mar)—incredible predator-prey scenes and fresh plains life.",
+      title: t("ndutuTitle"),
+      description: t("ndutuDesc"),
       link: "/service-details/2",
     },
     {
       img: tz1,
-      title: "Fly-in Serengeti Adventure",
-      description:
-        "Maximize your safari time by flying straight into the Serengeti—luxury camps, stunning views, and unforgettable drives await.",
+      title: t("flyinTitle"),
+      description: t("flyinDesc"),
       link: "/service-details/2",
     },
     {
       img: tz2,
-      title: "Mount Kilimanjaro Trek",
-      description:
-        "Stand in awe of Africa’s tallest peak—hike its forested lower slopes or explore Chagga culture at its majestic base.",
+      title: t("kilimanjaroTitle"),
+      description: t("kilimanjaroDesc"),
       link: "/service-details/2",
     },
   ];
@@ -92,7 +88,7 @@ export default function Tanzania() {
 
   return (
     <div className="bg-orange-200 min-h-screen">
-           {/* Carousel */}
+      {/* ✅ Carousel */}
       <div className="relative w-full h-[80vh] overflow-hidden bg-orange-400 mb-16">
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-700"
@@ -104,13 +100,14 @@ export default function Tanzania() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-        {/* Carousel Text */}
+        {/* ✅ Carousel Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <div className="text-center">
-            <p className="text-xl md:text-4xl mt-4">TANZANIA</p>
+            <p className="text-xl md:text-4xl mt-4 font-bold">
+              {t("tanzaTitle")}
+            </p>
           </div>
         </div>
-
 
         {/* Prev Button */}
         <button
@@ -159,25 +156,20 @@ export default function Tanzania() {
         </button>
       </div>
 
-      {/* Service Description */}
+      {/* ✅ Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-10">
-        <h1>
-          From the Serengeti’s Great Migration to the tranquil beaches of Zanzibar, Tanzania
-          offers a safari experience as vast as it is unforgettable.
-        </h1>
+        <h1>{t("tanzaDesc")}</h1>
       </div>
 
-      {/* Section Title */}
+      {/* ✅ Section Title */}
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-          Top Experiences in Tanzania
+          {t("tanzaniaExperiencesTitle")}
         </h2>
-        <p className="text-gray-600 mt-2">
-          Explore the must-see destinations and cultural highlights of Tanzania
-        </p>
+        <p className="text-gray-600 mt-2">{t("tanzaniaExperiencesDesc")}</p>
       </div>
 
-      {/* Cards Section */}
+      {/* ✅ Cards Section */}
       <div className="flex justify-center items-center w-full mb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
           {cards.map((card, index) => (

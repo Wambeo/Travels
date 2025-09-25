@@ -1,93 +1,85 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import antelope1 from "../assets/antelope1.jpg"
-import birdie from "../assets/birdie.jpg"
-import lions from "../assets/lions.jpg"
-import leopard from "../assets/leopard.jpg"
-import elephants2 from "../assets/elephants2.jpg"
-import ghazal2 from "../assets/ghazal2.jpg"
-import ghazal from "../assets/ghazal.jpg"
-import flamingoes from "../assets/flamingoes.jpg"
-import tourists from  "../assets/tourists.jpg"
-import diani from  "../assets/diani.jpg"
-import maasai from  "../assets/maasai.jpg"
-import zebras2 from  "../assets/zebras2.jpg"
-import boatracing from  "../assets/boatracing.jpg"
-import baboon1 from  "../assets/baboon1.jpg"
-
-
+import antelope1 from "../assets/antelope1.jpg";
+import birdie from "../assets/birdie.jpg";
+import lions from "../assets/lions.jpg";
+import leopard from "../assets/leopard.jpg";
+import elephants2 from "../assets/elephants2.jpg";
+import ghazal2 from "../assets/ghazal2.jpg";
+import ghazal from "../assets/ghazal.jpg";
+import flamingoes from "../assets/flamingoes.jpg";
+import tourists from "../assets/tourists.jpg";
+import diani from "../assets/diani.jpg";
+import maasai from "../assets/maasai.jpg";
+import zebras2 from "../assets/zebras2.jpg";
+import boatracing from "../assets/boatracing.jpg";
+import baboon1 from "../assets/baboon1.jpg";
 
 export default function Kenya() {
   const [currentSlide, setCurrentSlide] = useState(0);
- 
+  const { t } = useTranslation();
 
   // ✅ Carousel slides
   const slides = [
     antelope1,
     antelope1,
-    birdie,  leopard,
+    birdie,
+    leopard,
     elephants2,
     ghazal,
     ghazal2,
     lions,
   ];
 
-  // ✅ Cards data
+  // ✅ Cards data (pulled from translations)
   const cards = [
     {
-      title: "Nairobi City Day Trip",
-      description:
-        "From bustling markets to wildlife adventures, explore the only city with a national park, where urban energy meets natural beauty.",
+      title: t("nairobiTitle"),
+      description: t("nairobiDesc"),
       image: zebras2,
       link: "/destinations/nairobi",
     },
     {
-      title: "Maasai Mara National Reserve",
-      description:
-        "Witness the awe-inspiring Great Migration, a breathtaking spectacle of nature’s drama amidst stunning landscapes and iconic wildlife.",
+      title: t("maraTitle"),
+      description: t("maraDesc"),
       image: maasai,
       link: "/destinations/mara",
     },
     {
-      title: "Lake Nakuru National Park",
-      description:
-        "Marvel at the beauty of Lake Nakuru, home to flamingos, rhinos, and diverse wildlife in a stunning, serene setting.",
+      title: t("nakuruTitle"),
+      description: t("nakuruDesc"),
       image: flamingoes,
       link: "/destinations/nakuru",
     },
     {
-      title: "Tsavo National Parks",
-      description:
-        "From the Yatta Plateau to Mzima Springs, explore Kenya’s largest park where red-dusted elephants roam freely.",
+      title: t("tsavoTitle"),
+      description: t("tsavoDesc"),
       image: ghazal2,
       link: "/destinations/tsavo",
     },
     {
-      title: "Mount Kenya",
-      description:
-        "Ascend Africa’s second-highest peak with alpine landscapes, glacial lakes, and unique flora like giant lobelias.",
+      title: t("mountKenyaTitle"),
+      description: t("mountKenyaDesc"),
       image: tourists,
       link: "/destinations/mount-kenya",
     },
     {
-      title: "Diani Beach",
-      description:
-        "Sink your toes into white sands, snorkel vibrant reefs, or enjoy thrilling water sports on Kenya’s famous coast.",
+      title: t("dianiTitle"),
+      description: t("dianiDesc"),
       image: diani,
       link: "/destinations/diani",
     },
     {
-      title: "Aberdare National Park",
-      description:
-        "A haven for nature lovers with game drives, hiking trails, and tree-top lodges overlooking wildlife at watering holes.",
+      title: t("aberdareTitle"),
+      description: t("aberdareDesc"),
       image: baboon1,
       link: "/destinations/aberdare",
     },
     {
-      title: "Lake Naivasha",
-      description:
-        "Enjoy peaceful boat rides among hippos and birds, or relax with views of the Great Rift Valley at Lake Naivasha.",
+      title: t("naivashaTitle"),
+      description: t("naivashaDesc"),
       image: boatracing,
       link: "/destinations/naivasha",
     },
@@ -123,7 +115,7 @@ export default function Kenya() {
 
         {/* Carousel text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <p className="text-xl md:text-5xl font-bold">KENYA</p>
+          <p className="text-xl md:text-5xl font-bold">{t("destinationTitle")}</p>
         </div>
 
         {/* Prev Button */}
@@ -171,11 +163,10 @@ export default function Kenya() {
         </button>
       </div>
 
-      {/* ✅ Service Description */}
+      {/* ✅ Destination Description */}
       <div className="text-xl text-gray-800 flex justify-center bg-orange-200 mt-10 mb-10 w-full p-6 md:p-10">
         <h1 className="max-w-4xl text-center leading-relaxed">
-          From the savannas of the Maasai Mara to the sparkling waters of the
-          Indian Ocean, Kenya offers an unforgettable journey of discovery.
+          {t("destinationDesc")}
         </h1>
       </div>
 
