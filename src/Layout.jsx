@@ -76,135 +76,143 @@ export default function Layout() {
     <div>
       {/* ✅ Navbar */}
       <nav className="bg-transparent fixed w-full z-20 top-0 start-0 border-b border-transparent ">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
-    {/* Logo */}
-    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src={logo} className="h-8" alt="Logo" />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-        Africkson
-      </span>
-    </a>
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+          {/* Logo */}
+          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src={logo} className="h-8" alt="Logo" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+              Africkson
+            </span>
+          </a>
 
-    {/* Right side (Language toggle + hamburger) */}
-    <div className="flex items-center gap-4 md:order-2">
-      {/* ✅ Language Toggle */}
-      <button
-        onClick={changeLanguage}
-        className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm"
-      >
-        {(i18n.language || "en").toUpperCase()}
-      </button>
-
-      {/* ✅ Mobile menu button */}
-      <button
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-white focus:outline-none focus:ring-2"
-      >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          className="w-5 h-5"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="white"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-    </div>
-
-    {/* ✅ Navbar links */}
-    <div
-      className={`${
-        isMobileMenuOpen ? "block" : "hidden"
-      } items-center justify-between w-full md:flex md:w-auto md:order-1`}
-      id="navbar-sticky"
-    >
-      <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-white rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-        <li>
-          <Link
-            to="/"
-            className="block text-white py-2 px-3 rounded md:bg-transparent md:p-0"
-            aria-current="page"
-          >
-            {t("home")}
-          </Link>
-        </li>
-
-        {/* ✅ Destinations dropdown */}
-        <li className="relative">
-          <button
-            onClick={toggleDropdown}
-            className="flex items-center text-white py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-          >
-            {t("destinations")}
-            <svg
-              className="w-5 h-5 ml-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
+          {/* Right side (Language toggle + hamburger) */}
+          <div className="flex items-center gap-4 md:order-2">
+            {/* ✅ Language Toggle */}
+            <button
+              onClick={changeLanguage}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+              {(i18n.language || "en").toUpperCase()}
+            </button>
 
-          {isOpen && (
-            <div className="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-gray-300 border border-gray-200 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
-                <a
-                  href="/destinations"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Kenya
-                </a>
-                <a
-                  href="/destinations/uganda"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Uganda
-                </a>
-                <a
-                  href="/destinations/tanzania"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Tanzania
-                </a>
-              </div>
-            </div>
-          )}
-        </li>
+            {/* ✅ Mobile menu button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-white focus:outline-none focus:ring-2"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="white"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
 
-        <li>
-          <Link to="/blog" className="block text-white py-2 px-3 hover:text-blue-700">
-            {t("blog")}
-          </Link>
-        </li>
-        <li>
-          <Link to="/services" className="block text-white py-2 px-3 hover:text-blue-700">
-            {t("services")}
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" className="block text-white py-2 px-3 hover:text-blue-700">
-            {t("contact")}
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          {/* ✅ Navbar links */}
+          <div
+            className={`${
+              isMobileMenuOpen ? "block" : "hidden"
+            } items-center justify-between w-full md:flex md:w-auto md:order-1`}
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-white rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+              <li>
+                <Link
+                  to="/"
+                  className="block text-white py-2 px-3 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                >
+                  {t("home")}
+                </Link>
+              </li>
 
+              {/* ✅ Destinations dropdown */}
+              <li className="relative">
+                <button
+                  onClick={toggleDropdown}
+                  className="flex items-center text-white py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  {t("destinations")}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+
+                {isOpen && (
+                  <div className="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-gray-300 border border-gray-200 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="py-1">
+                      <a
+                        href="/destinations"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Kenya
+                      </a>
+                      <a
+                        href="/destinations/uganda"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Uganda
+                      </a>
+                      <a
+                        href="/destinations/tanzania"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Tanzania
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <Link
+                  to="/blog"
+                  className="block text-white py-2 px-3 hover:text-blue-700"
+                >
+                  {t("blog")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="block text-white py-2 px-3 hover:text-blue-700"
+                >
+                  {t("services")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="block text-white py-2 px-3 hover:text-blue-700"
+                >
+                  {t("contact")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <ToastContainer
         position="top-right"
@@ -223,92 +231,86 @@ export default function Layout() {
       <Outlet />
 
       {/* ✅ Footer with translations */}
-      <footer className="bg-[#D6A800] mt-1">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <a href="" className="flex items-center">
-                <img src={logo} className="h-8 me-3" alt="Africkson Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                  Africkson
-                </span>
-              </a>
-            </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black">
-                  {t("about")}
-                </h2>
-                <ul className="text-gray-500 dark:text-black font-medium">
-                  <li className="mb-2">
-                    <a href="#" className="hover:underline">
-                      {t("contactUs")}
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#" className="hover:underline">
-                      {t("privacyPolicy")}
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#" className="hover:underline">
-                      {t("termsOfService")}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black">
-                  {t("contactHeader")}
-                </h2>
-                <ul className="text-gray-500 dark:text-black font-medium">
-                  <li className="mb-4">
-                    <p className="hover:underline">{t("location")}</p>
-                  </li>
-                  <li className="mb-4">
-                    <p className="hover:underline">africksonsafarisbarcelona@gmail.com</p>
-                  </li>
-                  <li className="mb-4">
-                    <p className="hover:underline">+254 711 477 574</p>
-                  </li>
-                  <li className="mb-4">
-                    <p className="hover:underline">+254 724 647 982</p>
-                  </li>
-                  <li className="mb-4">
-                    {/* Newsletter */}
-                    <div className="mt-8">
-                      <h2 className="mb-6 text-sm font-semibold text-black">
-                        {t("newsletter")}
-                      </h2>
-                      <form className="flex items-center">
-                        <input
-                          type="email"
-                          className="p-2 w-full text-gray-900 bg-[#D6A800] rounded-lg shadow-md focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-                          placeholder="Enter your email"
-                        />
-                      </form>
-                    </div>
-                  </li>
-                  <li>
-                    <button
-                      type="submit"
-                      className="ml-2 px-4 py-2 text-white bg-[#12486B] rounded-lg shadow-md hover:bg-blue-700"
-                    >
-                      {t("subscribe")}
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-black">
-              © 2023 Africkson™. All Rights Reserved.
-            </span>
-          </div>
+    <footer className="bg-[#D6A800] mt-1">
+  <div className="mx-auto w-full max-w-screen-xl p-6 lg:py-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Logo */}
+      <div>
+        <a href="/" className="flex items-center mb-4">
+          <img src={logo} className="h-8 me-3" alt="Africkson Logo" />
+          <span className="self-center text-2xl font-semibold text-white">
+            Africkson
+          </span>
+        </a>
+      </div>
+
+      {/* About */}
+      <div>
+        <h2 className="mb-4 text-sm font-semibold text-black uppercase">
+          {t("about")}
+        </h2>
+        <ul className="text-black font-medium space-y-2">
+          <li>
+            <a href="#" className="hover:underline">
+              {t("contactUs")}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline">
+              {t("privacyPolicy")}
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline">
+              {t("termsOfService")}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Contact + Newsletter */}
+      <div>
+        <h2 className="mb-4 text-sm font-semibold text-black uppercase">
+          {t("contactHeader")}
+        </h2>
+        <ul className="text-black font-medium space-y-2">
+          <li>{t("location")}</li>
+          <li className="break-words">africksonsafarisbarcelona@gmail.com</li>
+          <li>+254 711 477 574</li>
+          <li>+254 724 647 982</li>
+        </ul>
+
+        {/* Newsletter */}
+        <div className="mt-6">
+          <h2 className="mb-2 text-sm font-semibold text-black">
+            {t("newsletter")}
+          </h2>
+          <form className="flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              className="flex-1 p-2 text-gray-900 bg-white rounded-lg shadow-md focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 text-white bg-[#12486B] rounded-lg shadow-md hover:bg-blue-700"
+            >
+              {t("subscribe")}
+            </button>
+          </form>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    {/* ✅ Copyright moved to bottom */}
+    <div className="mt-8 border-t border-yellow-300 pt-4">
+      <p className="text-center text-sm text-black">
+        © 2023 Africkson™. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
 
       {/* ✅ Floating WhatsApp with multiple numbers */}
       <MultiWhatsAppButton />
